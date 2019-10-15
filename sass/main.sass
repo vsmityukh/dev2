@@ -1,0 +1,110 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background: #fff
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.wrap
+	width: 100%
+	max-width: 1266px
+	background: #fff
+	margin: 
+		left: auto
+		right: auto
+	
+
+header
+	height: 940px
+
+.title
+	text-align: center
+	font-size: 26px
+	margin-bottom: 30px
+	&.upper
+		text-transform: uppercase
+		
+
+//MAIN SLIDER
+.main_slider__item
+	background-size: cover
+	height: 940px
+
+section
+	padding-top: 30px
+
+.m_services
+	margin-top: -120px
+	
+// end
+
+// main services
+.services_item
+	margin-bottom: 52px
+	height: 430px
+	width: 270px
+
+
+//main projects
+.proj_tabs__header
+	height: 72px
+	border: 1px solid #beb7ac
+	padding: 25px 20px 17px
+	line-height: 1
+	text-transform: uppercase
+	display: block
+	font-size: 12px
+	color: #beb7ac
+	margin-bottom: 10px
+	&:hover
+		background-color: #efeeea
+		border-color: #efeeea
+		color: #beb7ac
+		text-decoration: none
+	span
+		display: block
+		margin-top: 10px
+		text-transform: none
+		color: #dadada
+		font-size: 10px
+
+
+
+
+
+
+@import "media" // Always at the end
