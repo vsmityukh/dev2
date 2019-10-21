@@ -238,7 +238,8 @@ section
 	position: relative
 	z-index: 1
 
-.slick-slider
+	
+.main_slider.slick-slider
 	.slick-dots
 		list-style: none
 		padding-left: 0
@@ -261,6 +262,26 @@ section
 		button
 			display: none
 	
+.slick-slider
+	.slick-dots
+		list-style: none
+		padding-left: 0
+		text-align: center
+		margin-bottom: 0
+		li
+			cursor: pointer
+			display: inline-block
+			margin: 0 7px
+			background: transparent
+			width: 10px
+			height: 10px
+			border: 1px solid transparent
+			border-color: rgba(140,107,72,.5)
+			border-radius: 50%
+			&.slick-active
+				background-image: linear-gradient(to top, #52473a 0%, #8c6b48 100%)
+		button
+			display: none
 // end
 
 // main services
@@ -329,6 +350,7 @@ section
 //main projects
 .proj_tabs__header
 	height: 72px
+	max-width: 366px
 	border: 1px solid #beb7ac
 	padding: 20px 20px 15px
 	line-height: 1
@@ -409,6 +431,103 @@ section
 		margin: 0 auto
 		cursor: pointer
 
+//Проекты
+.m_projects
+	.nav-pills 
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 24px
+		.nav-item
+			width: 33%
+		.nav-link
+			border-radius: 0
+	.nav-pills .nav-link.active
+		background-color: #eeecea
+		border-color: #efeeea
+		color: #7c6c5a
+		text-decoration: none
+	
+	.tab-content
+		margin-bottom: 70px
+
+
+.slick-arrow
+	position: absolute
+	top: 50%
+	width: 18px
+	height: 32px
+	background-repeat: no-repeat
+	border: none
+	text-indent: -9999px
+	background-color: transparent
+	margin-top: -16px
+	cursor: pointer
+	&:focus
+		outline: none
+	&.slick-prev
+		left: -32px
+		background-image: url('../img/arrow.png')
+		transform: rotate(180deg)
+		&:hover
+			background-image: url('../img/arrow-hover.png')
+			transform: rotate(0deg)
+		
+	&.slick-next
+		right: -32px
+		background-image: url('../img/arrow.png')
+		&:hover
+			background-image: url('../img/arrow-hover.png')
+			transform: rotate(180deg)
+	
+
+		
+
+.middle_slider
+	max-width: 1000px
+	margin: 0 auto
+.middle_slider--item
+	max-width: 486px
+	height: 530px
+	margin: 25px 15px
+	box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.1)
+	background-color: #ffffff
+	
+	.slider_img
+		height: 304px
+		overflow: hidden
+	.slider_desc
+		padding: 15px 22px 36px	
+		h3
+			font-size: 24px
+			font-weight: 400
+			margin-bottom: 17px
+			line-height: 1
+		span
+			display: block
+			font-size: 14px
+			color: #808080
+			font-family: Roboto
+			line-height: 24px
+
+	.slider_bottom
+		margin-top: 18px
+		display: flex
+		justify-content: space-between
+	.slider_bottom--price
+		p
+			font-size: 24px
+			line-height: 30px
+			margin-bottom: 0
+		small
+			font-size: 18px
+			line-height: 24px
+	.btn_link
+		margin-top: 6px
+		height: 37px
+		width: 169px
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 0.14px
 
 
 //FOOTER
