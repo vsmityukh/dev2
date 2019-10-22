@@ -351,6 +351,7 @@ section
 .proj_tabs__header
 	height: 72px
 	max-width: 366px
+	width: 95%
 	border: 1px solid #beb7ac
 	padding: 20px 20px 15px
 	line-height: 1
@@ -402,6 +403,11 @@ section
 .m_contact_form
 	width: 295px
 	margin: 18px auto 0
+	button
+		display: block
+		margin: 0 auto
+
+form.classic	
 	input
 		width: 294px
 		height: 36px
@@ -427,8 +433,6 @@ section
 		text-transform: uppercase
 		width: 189px
 		height: 36px
-		display: block
-		margin: 0 auto
 		cursor: pointer
 
 //Проекты
@@ -480,21 +484,32 @@ section
 			transform: rotate(180deg)
 	
 
-		
+.tab-content>.tab-pane{ display: block; height: 0px; overflow: hidden; }
+.tab-content>.active{ height: auto;}		
 
 .middle_slider
 	max-width: 1000px
 	margin: 0 auto
+
 .middle_slider--item
 	max-width: 486px
 	height: 530px
 	margin: 25px 15px
 	box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.1)
 	background-color: #ffffff
-	
+	&.slider_small
+		height: 492px
+		.slider_img
+			height: 202px
+		.slider_bottom
+			display: block
+			.slider_bottom--link
+				margin-top: 19px
 	.slider_img
 		height: 304px
 		overflow: hidden
+		img
+			max-width: 100%
 	.slider_desc
 		padding: 15px 22px 36px	
 		h3
@@ -528,6 +543,202 @@ section
 		font-size: 12px
 		text-transform: uppercase
 		letter-spacing: 0.14px
+
+
+//BURO
+.m_buro--inner
+	background:
+		repeat: no-repeat
+		position: top right
+	height: 600px
+	padding: 52px 0
+	position: relative
+	display: flex
+	justify-content: flex-end
+	.buro_form
+		width: 431px
+		height: 496px
+		margin-right: 15.6%
+		background-color: #342e28
+		padding: 53px 64px 55px
+		p
+			color: #ffffff
+			font-size: 24px
+			font-weight: 700
+			line-height: 24px
+		blockquote
+			margin: 16px 0 22px
+			padding: 10px 0
+			text-align: center
+			color: #d4be8e
+			font-size: 15px
+			line-height: 24px
+			border-top: 4px solid #d4be8e
+			border-bottom: 4px solid #d4be8e
+			span
+				font-size: 24px
+		small
+			color: #ffffff
+			font-family: Roboto
+			font-size: 14px
+			font-weight: 400
+			line-height: 24px
+			display: block
+			margin-bottom: 20px
+
+//GALLERY MAIN PAGE
+.m_gallery
+	.gallery_wrap
+		display: flex
+		flex-wrap: wrap
+	.nav-pills
+		margin-bottom: 35px
+		display: flex
+		justify-content: center
+		.nav-item 
+			margin: 0 5px
+			a
+				color: #808080
+				font-family: Roboto
+				font-size: 16px
+				font-weight: 400
+				background: none
+				padding: 0
+				&.active
+					color: #014ca0
+
+.gallery_small, .gallery-lg
+	height: 286px
+	border: 4px solid #ffffff
+	background-color: #d0d0d0
+	cursor: pointer
+	position: relative
+	overflow: hidden
+	background: 
+		repeat: no-repeat
+		position: center
+		size: cover	
+	.gallery_item--wrapper
+		background-color: rgba(35, 32, 29, 0.8)
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		transform: translateY(-100%)
+		transition: all .3s
+		color: #fefefe
+	&:hover
+		.gallery_item--wrapper
+			transform: translateY(0%)
+.gallery_desc
+	padding: 24px 43px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	bottom: 24px
+	width: 100%
+	height: 100%
+	h3
+		font-size: 30px
+		line-height: 1
+		margin-bottom: 20px
+	p
+		line-height: 1.7
+		font-family: Roboto
+		font-size: 14px
+		margin-bottom: 0
+	a
+		color: #fdf200
+		font-family: Roboto
+		font-size: 14px
+		line-height: 24px
+		margin-top: 58px
+		&:after
+			content: ""
+			width: 16px
+			height: 17px
+			background: url('../img/link_arrow.png') no-repeat
+			display: inline-block
+			vertical-align: middle
+			margin-left: 10px
+
+.m_gallery--links
+	margin-top: 33px
+	display: flex
+	justify-content: space-between
+	padding: 0 10px
+	a
+		width: 49%
+		max-width: 558px
+		height: 85px
+		border: 4px solid #fdf200
+		color: #000000
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		display: block
+		padding: 15px 0 18px
+		line-height: 1.1
+		&:hover
+			background-color: #fdf200
+			text-decoration: none
+		span
+			color: #5a5856;
+			font-family: Roboto;
+			font-weight: 400
+			display: block
+			font-size: 14px
+			line-height: 1.4
+			
+
+.gallery_small
+	width: 25%
+.gallery-lg
+	width: 50%
+
+
+//ABOUT
+.m_about--content
+	margin: 0 0 56px
+	.about_top--name
+		margin-top: 82px
+		p
+			font-size: 30px
+			line-height: 27.95px
+			margin-bottom: 12px
+		span
+			display: inline-block
+			text-align: center
+			padding: 0 9px
+			height: 24px
+			background-color: #fae300
+			font-size: 16px
+			text-transform: uppercase
+	.about_top
+		position: relative
+		max-width: 1079px
+		width: 94%
+		margin: 0 0 0 auto
+		min-height: 493px
+		border: 2px solid #7c6c5a
+		padding: 69px 192px 50px 302px
+		background-position: 95% 98%
+		background-repeat: no-repeat
+		p
+			color: #000000
+			font-family: Roboto
+			font-size: 18px
+			font-style: italic
+			line-height: 1.33
+			margin-bottom: 30px
+		img.creator
+			position: absolute
+			width: 294px
+			height: 430px
+			top: 24px
+			left: -67px
+			box-shadow: 13px 8px 46px rgba(0, 0, 0, 0.35)
 
 
 //FOOTER
