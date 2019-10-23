@@ -700,21 +700,12 @@ form.classic
 
 //ABOUT
 .m_about--content
-	margin: 0 0 56px
-	.about_top--name
-		margin-top: 82px
-		p
-			font-size: 30px
-			line-height: 27.95px
-			margin-bottom: 12px
-		span
-			display: inline-block
-			text-align: center
-			padding: 0 9px
-			height: 24px
-			background-color: #fae300
-			font-size: 16px
-			text-transform: uppercase
+	margin: 0 0 33px
+	border-bottom:
+		width: 1px
+		style: solid
+		color: rgba(124,108,90,.5)
+	
 	.about_top
 		position: relative
 		max-width: 1079px
@@ -737,9 +728,43 @@ form.classic
 			width: 294px
 			height: 430px
 			top: 24px
-			left: -67px
+			left: -93px
 			box-shadow: 13px 8px 46px rgba(0, 0, 0, 0.35)
-
+		.about_top--name
+			margin-top: 82px
+			&>p
+				font-size: 30px
+				line-height: 27.95px
+				margin-bottom: 12px
+				font-style: normal
+			span
+				display: inline-block
+				text-align: center
+				padding: 0 9px
+				height: 24px
+				background-color: #fae300
+				font-size: 16px
+				text-transform: uppercase
+	.about_text
+		margin-top: 56px
+		p
+			color: #000000
+			font-family: Roboto
+			font-size: 16px
+			margin-bottom: 29px
+		h3
+			font-size: 22px
+			margin-bottom: 20px
+			line-height: 1
+		ul
+			list-style: none
+			padding-left: 0
+			li
+				font-size: 14px
+				line-height: 1.4
+				margin-bottom: 15px
+				padding-left: 30px
+				background: url('../img/li-bg.png') no-repeat left
 
 //FOOTER
 footer
