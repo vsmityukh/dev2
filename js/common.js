@@ -19,9 +19,18 @@ $(function() {
 		dots: true
 	})
 
-	// $('a[data-toggle="pill"]').on('click', function (e) {
-	// 	console.log(1);
-	// 	$('.slick-middle, .slick-small').slick('refresh');
-	// });
+	$(document).scroll(function(){
+		var offset = $(document).scrollTop(),
+			header = $('header').height();
+		if( offset > header )
+			$('#leftMenu').addClass('content')
+		else
+			$('#leftMenu').removeClass('content')
+	})
+
+	$('#menuToggler, #menuClose').on('click', function(){
+		$('#leftMenu').toggleClass('active')
+	})
+
 
 });

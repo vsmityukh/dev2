@@ -97,8 +97,8 @@ a
 	max-width: 1266px
 	background: #fff
 	margin: 
-		left: auto
-		right: auto
+		left: 22.13%
+		right: 11.91%
 	
 
 header
@@ -120,22 +120,72 @@ header
 //LEFT MENU
 .left_menu
 	width: 301px
-	background-color: rgba(35,32,29,.75);
-	opacity: 0.75
-	height: 100VH
+	padding: 38px 33px
+	text-align: center
+	background-color: rgba(35,32,29,.75)
+	height: 100vh
 	position: fixed
 	left: 0
 	top: 0
 	z-index: 10001
+	&.content
+		background-color: #5a5855
+		.menu_bottom--social
+			a
+				opacity: 1
+	.menu_wrapper
+		height: 100%
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+	.menu_bottom
+		.btn_link
+			width: 188px
+			height: 36px
+			font-size: 12px
+			margin-bottom: 24px
+			margin-left: auto
+			margin-right: auto
+	.menu_bottom--info
+		margin-bottom: 35px
+		p, a
+			opacity: 0.5
+			color: #ffffff
+			font-family: Roboto
+			font-size: 13px
+			line-height: 24px
+			margin-bottom: 0
+	.menu_bottom--social
+		a
+			margin: 0 8px
+			opacity: .5
+	.menu_box--links
+		display: none
+	.menu_box--list
+		list-style: none
+		padding-left: 0
+		li
+			margin-bottom: 25px
+			a
+				color: #ffffff
+				font-size: 14px
+				text-transform: uppercase
+				line-height: 1
+				&:hover
+					color: #fae300
+					text-decoration: none
+		
 
 //TOP MENU
 .header_top
 	display: flex
 	position: absolute
 	width: 1170px
-	margin: 0 auto;
-	left: 50%
-	transform: translateX(-50%)
+	margin:
+		top: 0 
+		left: 24.37%
+		right: 14.67%
+		bottom: 0
 	z-index: 101
 	top: 0
 	height: 84px
@@ -217,7 +267,11 @@ header
 		justify-content: flex-end
 		flex-direction: column
 		max-width: 1170px
-		margin: 0 auto
+		margin:
+			top: 0 
+			left: 24.37%
+			right: 14.67%
+			bottom: 0
 		padding-bottom: 195px
 		color: #ffffff
 	.slider_content--title
@@ -861,5 +915,60 @@ footer
 				line-height: 1
 				margin-bottom: 17px
 
+.header_top--logo, .header_top--toggler
+	display: none
+
+
+@media (max-width: 1600px)
+	.top_menu--links
+		flex-direction: column
+		text-align: right
+		.top_favorite
+			margin-left: 0
+	.header_top
+		align-items: center
+		padding-top: 0
+		padding-bottom: 0
+		justify-content: space-between
+		.header_top--logo
+			display: block
+			height: 62px
+			img
+				max-width: 100%
+		.header_top--phone
+			text-align: right
+	.left_menu
+		transform: translateX(-100%)
+		height: auto
+		transition: all .3s
+		&.active
+			transform: translateX(0)
+		.menu_box--links
+			display: block
+		.toggler_close
+			position: absolute
+			display: block
+			left: 20px
+			top: 29px
+	.header_top,.wrap, .slider .slider_content
+		margin-left: auto
+		margin-right: auto
+	.header_top
+		left: 50%
+		transform: translateX(-50%)
+	.top_menu
+		nav
+			display: none
+	
+	.header_top--toggler
+		display: block
+	
+
+@media (max-width: 1440px)
+	.left_menu
+		.menu_box--list
+			li
+				margin-bottom: 15px
 
 @import "media" // Always at the end
+
