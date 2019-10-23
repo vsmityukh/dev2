@@ -700,7 +700,7 @@ form.classic
 
 //ABOUT
 .m_about--content
-	margin: 0 0 33px
+	margin: 0 0 57px
 	border-bottom:
 		width: 1px
 		style: solid
@@ -766,14 +766,100 @@ form.classic
 				padding-left: 30px
 				background: url('../img/li-bg.png') no-repeat left
 
+
+//ROW ICONS
+.row_icons
+	margin-bottom: 57px
+	border-bottom:
+		width: 1px
+		style: solid
+		color: rgba(124,108,90,.5)
+	margin-right: 0
+	margin-left: 0
+	h3
+		font-size: 22px
+		line-height: 24px
+		margin-bottom: 20px
+	p
+		font-family: Roboto
+		font-weight: 400
+		font-size: 14px
+		margin-bottom: 18px
+	&>div
+		padding: 0
+
+	.icons
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 35px
+		.icons_img
+			padding: 6px 6px
+			width: 75px
+			img
+				max-width: 100%
+		.icons_title
+			padding-top: 16px
+			color: #000000
+			font-family: Cambria
+			font-size: 16px
+			line-height: 24px
+			text-transform: uppercase
+			padding-left: 10px
+			width: calc( 100% - 75px )
+		.icons_desc
+			margin-top: 17px
+			opacity: 0.75
+			color: #000000
+			font-family: Roboto
+			font-size: 14px
+			line-height: 24px
+			
+
 //FOOTER
 footer
 	min-height: 340px
 	background-color: #e6e6e6
 	padding: 33px 0 22px
 
-
-
+	.copyright
+		margin-top: 60px
+		color: #888888
+		font-family: Roboto
+		font-size: 14px
+		line-height: 1
+		border-top: 1px solid rgba(124,108,90,.5)
+		padding: 17px 0 22px
+		p
+			margin-bottom: 0
+	.footer_menu
+		.footer_menu--title
+			font-size: 12px
+			color: #888888
+			font-family: Roboto
+			margin-bottom: 12px
+		ul
+			list-style: none
+			padding-left: 0
+			li a
+				color: #3e3a30
+				font-size: 14px
+				line-height: 30px
+				text-transform: uppercase
+	.footer_info
+		display: flex
+		justify-content: space-between
+		.footer_info--part
+			width: 50%
+			p
+				color: #888888
+				font-family: Roboto
+				font-size: 12px
+			h3
+				color: #3e3a30
+				font-family: Cambria
+				font-size: 14px
+				line-height: 1
+				margin-bottom: 17px
 
 
 @import "media" // Always at the end
