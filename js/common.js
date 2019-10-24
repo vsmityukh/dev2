@@ -10,13 +10,49 @@ $(function() {
 	$('.slick-middle').slick({
 		slidesToShow: 2,
 		arrows: true,
-		dots: true
+		dots: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true
+				}
+			}
+		]
 	})
 
 	$('.slick-small').slick({
 		slidesToShow: 3,
 		arrows: true,
-		dots: true
+		dots: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true
+				}
+			}
+		]
 	})
 
 	$(document).scroll(function(){

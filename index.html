@@ -112,7 +112,10 @@
 			<div class="header_top--menu top_menu">
 				<div class="top_menu--links">
 					<div class="top_search">
-						<span>Поиск по сайту</span>
+						<form action="#" class="form_search">
+							<input type="text" name="search" id="search" placeholder="Поиск по сайту">
+							<button></button>
+						</form>
 					</div>
 					<div class="top_favorite">
 						<span>Избранное</span>
@@ -176,7 +179,7 @@
 					<div class="title upper">Услуги и проекты</div>
 				</div>
 
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-6 col-xl-3">
 					<div class="services_item" style="background-image: url('img/services_item1.jpg')">
 						<div class="services_item--inner">
 							<a href="">Проектирование</a>
@@ -187,7 +190,7 @@
 
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-6 col-xl-3">
 					<div class="services_item" style="background-image: url('img/services_item2.png')">
 						<div class="services_item--inner">
 							<a href="">Дом «под ключ»</a>
@@ -197,7 +200,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-6 col-xl-3">
 					<div class="services_item" style="background-image: url('img/services_item3.png')">
 						<div class="services_item--inner">
 							<a href="">баня под ключ</a>
@@ -207,7 +210,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-6 col-xl-3">
 					<div class="services_item" style="background-image: url('img/services_item4.png')">
 						<div class="services_item--inner">
 							<a href="#">Срубы на заказ</a>
@@ -225,7 +228,7 @@
 			<div class="row">
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_1.png" alt="">
@@ -237,7 +240,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_2.png" alt="">
@@ -250,7 +253,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_3.png" alt="">
@@ -265,7 +268,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_4.png" alt="">
@@ -279,7 +282,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_5.png" alt="">
@@ -293,7 +296,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_6.png" alt="">
@@ -307,7 +310,7 @@
 				</div><!-- /. icon item -->
 
 				<!-- icon item -->
-				<div class="col-12 col-md-6 col-lg-3">
+				<div class="col-12 col-md-6 col-md-4 col-xl-3">
 					<div class="icon_item">
 						<div class="icon_item--img">
 							<img src="img/ico_7.png" alt="">
@@ -1412,436 +1415,490 @@
 
 	<!-- object gallery -->
 	<section class="m_gallery">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 title">Галерея объектов</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12">
-					<!-- tabs -->
-					<ul class="nav nav-pills " id="gallerys-tab" role="tablist">
-						<li class="nav-item">
-							<a id="gallery1-1-tab" class="nav-link active"  data-toggle="pill" href="#gallery1-1" role="tab" aria-controls="gallerys-home" aria-selected="true">
-								Фото   
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="gallery1-2-tab" data-toggle="pill" href="#gallery1-2" role="tab" aria-controls="gallerys-profile" aria-selected="false">
-								Видео
-							</a>
-						</li>
-					</ul>
-					<!-- /. tabs -->
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 title">Галерея объектов</div>
 				</div>
-				<div class="col-12">
-					<!-- tab contents -->
-					<div class="tab-content" id="gallery-tabContent">
 
-						<!-- gallery photo content -->
-						<div class="tab-pane fade show active" id="gallery1-1" role="tabpanel" aria-labelledby="pills-home-tab">
-
-							<div class="gallery_wrap">
-								<div class="gallery_small" style="background-image: url('img/gallery_small1.jpg');">
-
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								
-								</div>
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small2.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="gallery-lg" style="background-image: url('img/gallery_lg3.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small4.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small5.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-lg" style="background-image: url('img/gallery_lg6.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-
-
-								<div class="gallery-lg" style="background-image: url('img/gallery_lg3.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery_small" style="background-image: url('img/gallery_small1.jpg');">
-
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								
-								</div>
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small2.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="gallery-lg" style="background-image: url('img/gallery_lg6.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small4.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="gallery_small" style="background-image: url('img/gallery_small5.jpg');">
-									<div class="gallery_item--wrapper">
-										<div class="gallery_desc">
-											<h3>Заложили новый дом</h3>
-											<p>Проектная площадь: 900кв. м</p>
-											<p>Диаметр бревна: 350-500 мм </p>
-											<p>Готовность: декабрь 2020 г.</p>
-											
-											<a href="#">Подробнее о проекте</a>
-										</div>
-									</div>
-								</div>
-								
-
-								
-							</div>
-
-						</div><!-- /. gallery photo content -->
-
-						<!-- gallery video content -->
-						<div class="row tab-pane fade" id="gallery1-2" role="tabpanel" aria-labelledby="pills-profile-tab">
-							gallery video content
-						</div><!-- /.gallery video content -->
-
+				<div class="row">
+					<div class="col-12">
+						<!-- tabs -->
+						<ul class="nav nav-pills " id="gallerys-tab" role="tablist">
+							<li class="nav-item">
+								<a id="gallery1-1-tab" class="nav-link active"  data-toggle="pill" href="#gallery1-1" role="tab" aria-controls="gallerys-home" aria-selected="true">
+									Фото   
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="gallery1-2-tab" data-toggle="pill" href="#gallery1-2" role="tab" aria-controls="gallerys-profile" aria-selected="false">
+									Видео
+								</a>
+							</li>
+						</ul>
+						<!-- /. tabs -->
 					</div>
-					<!-- /. tab contents -->
+					<div class="col-12">
+						<!-- tab contents -->
+						<div class="tab-content" id="gallery-tabContent">
+
+							<!-- gallery photo content -->
+							<div class="tab-pane fade show active" id="gallery1-1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+								<div class="gallery_wrap">
+									<div class="gallery_small" style="background-image: url('img/gallery_small1.jpg');">
+
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									
+									</div>
+
+									<div class="gallery_small" style="background-image: url('img/gallery_small2.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="gallery-lg" style="background-image: url('img/gallery_lg3.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
 
 
-					<div class="m_gallery--links">
-						<a href="#">
-							Выгодный кредит на строительство
-							<span>у 10 банков партнеров</span>
-						</a>
-						<a href="#">
-							Беспроцентная рассрочка 
-							<span>стройте сейчас, а платите потом</span>
-						</a>
+									<div class="gallery_small" style="background-image: url('img/gallery_small4.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="gallery_small" style="background-image: url('img/gallery_small5.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-lg" style="background-image: url('img/gallery_lg6.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="gallery-lg" style="background-image: url('img/gallery_lg3.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+									<div class="gallery_small" style="background-image: url('img/gallery_small1.jpg');">
+
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									
+									</div>
+
+									<div class="gallery_small" style="background-image: url('img/gallery_small2.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="gallery-lg" style="background-image: url('img/gallery_lg6.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="gallery_small" style="background-image: url('img/gallery_small4.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="gallery_small" style="background-image: url('img/gallery_small5.jpg');">
+										<div class="gallery_item--wrapper">
+											<div class="gallery_desc">
+												<h3>Заложили новый дом</h3>
+												<p>Проектная площадь: 900кв. м</p>
+												<p>Диаметр бревна: 350-500 мм </p>
+												<p>Готовность: декабрь 2020 г.</p>
+												
+												<a href="#">Подробнее о проекте</a>
+											</div>
+										</div>
+									</div>
+									
+
+									
+								</div>
+
+							</div><!-- /. gallery photo content -->
+
+							<!-- gallery video content -->
+							<div class="row tab-pane fade" id="gallery1-2" role="tabpanel" aria-labelledby="pills-profile-tab">
+								
+								<div class="gallery_wrap">
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video1.png');">
+										<div class="gallery_video--wrap">
+											<span>Сруб дома Зарянка с круглым окном от ДревМастер</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video2.png');">
+										<div class="gallery_video--wrap">
+											<span>Доска обрезная и доска заборная, необрезная в наличии</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video3.png');">
+										<div class="gallery_video--wrap">
+											<span>ДревМастер: площадка №2</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video4.png');">
+										<div class="gallery_video--wrap">
+											<span>ДревМастер: площадка №1</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video2.png');">
+										<div class="gallery_video--wrap">
+											<span>Сруб дома Зарянка с круглым окном от ДревМастер</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video4.png');">
+										<div class="gallery_video--wrap">
+											<span>Сруб дома Зарянка с круглым окном от ДревМастер</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video1.png');">
+										<div class="gallery_video--wrap">
+											<span>Сруб дома Зарянка с круглым окном от ДревМастер</span>
+										</div>
+									</a>
+
+									<a href="#" class="gallery_small" style="background-image: url('img/gallery_video3.png');">
+										<div class="gallery_video--wrap">
+											<span>Сруб дома Зарянка с круглым окном от ДревМастер</span>
+										</div>
+									</a>
+								</div>
+
+							</div><!-- /.gallery video content -->
+
+						</div>
+						<!-- /. tab contents -->
+
+
+						<div class="m_gallery--links">
+							<a href="#">
+								Выгодный кредит на строительство
+								<span>у 10 банков партнеров</span>
+							</a>
+							<a href="#">
+								Беспроцентная рассрочка 
+								<span>стройте сейчас, а платите потом</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 	</section><!-- /. object gallery -->
 
 
 	<!-- about company -->
 	<section class="m_about">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 title">О компании «ДревМастер»</div>
-			</div>
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 title">О компании «ДревМастер»</div>
+				</div>
 
-			<div class="row">
-				<div class="col-12">
-					<div class="m_about--content about">
-						<div class="about_top" style="background-image: url(img/signature.jpg);">
-							<img src="img/creator.jpg" alt="" class="creator" >
-							<div class="about_top--content" >
-								<p>	Мой бизнес — это дело всей моей жизни. Я с головой погружаюсь в задачи, которые ставят перед нашей командой клиенты.</p> 
-								<p>Дерево — материал с душой и характером. Оно не прощает непрофессионализма.</p> 
-										
-								<p>Поэтому для каждого проекта я лично выезжаю на делянки и отбираю лучшие образцы. Контроллирую процесс строительства на каждом этапе.</p>
+				<div class="row">
+					<div class="col-12">
+						<div class="m_about--content about">
+							<div class="about_top" style="background-image: url(img/signature.jpg);">
+								<img src="img/creator.jpg" alt="" class="creator" >
+								<div class="about_top--content" >
+									<p>	Мой бизнес — это дело всей моей жизни. Я с головой погружаюсь в задачи, которые ставят перед нашей командой клиенты.</p> 
+									<p>Дерево — материал с душой и характером. Оно не прощает непрофессионализма.</p> 
+											
+									<p>Поэтому для каждого проекта я лично выезжаю на делянки и отбираю лучшие образцы. Контроллирую процесс строительства на каждом этапе.</p>
 
-								<p>За качество наших домов я ручаюсь!</p>
+									<p>За качество наших домов я ручаюсь!</p>
+								</div>
+								<div class="about_top--name">
+									<p>Константин Бетин</p>
+									<span>директор компании</span>
+								</div>
 							</div>
-							<div class="about_top--name">
-								<p>Константин Бетин</p>
-								<span>директор компании</span>
+
+							<div class="about_text">
+								<p>Компания имеет более 10 лет опыта проектировнаия и строительства элитных загородных домов.</p>
+
+								<h3>Профиль деятельности:</h3>
+								<ul>
+									<li>дизайн и проектирование крупных бъектов сложной архитектуры;</li>
+									<li>ручная канадская, норвежская или русская рубка из окоренного бревна;</li>
+									<li>строительство домов и бань из бревна(полный комплекс работ от фундамента до финишной отделки)</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- row icons -->
+				<div class="row row_icons">
+					<div class="col-12">
+						<h3>Архитектурные возможности</h3>
+						<p>С вами работают лучшие штатные архитекторы в области деревянного домостроения. Их основная специализация - деревянные конструкции, которые имеют массу нюансов, не учитываемых архитекторами широкого профиля. Опыт разработки в том числе усадеб больших площадей!</p>													
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_1_1.png" alt="">
+							</div>
+							<div class="icons_title">
+								высококлассные <br> специалисты в штате								
+							</div>
+							<div class="icons_desc">
+								В нашей команде работают только <br> штатные архитекторы
 							</div>
 						</div>
-
-						<div class="about_text">
-							<p>Компания имеет более 10 лет опыта проектировнаия и строительства элитных загородных домов.</p>
-
-							<h3>Профиль деятельности:</h3>
-							<ul>
-								<li>дизайн и проектирование крупных бъектов сложной архитектуры;</li>
-								<li>ручная канадская, норвежская или русская рубка из окоренного бревна;</li>
-								<li>строительство домов и бань из бревна(полный комплекс работ от фундамента до финишной отделки)</li>
-							</ul>
-						</div>
-
 					</div>
-				</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_1_2.png" alt="">
+							</div>
+							<div class="icons_title">
+								Проектироваание домов <br>
+								в стилях рустик, шале, ...
+							</div>
+							<div class="icons_desc">
+								Проекты выполнены в современных <br> стилях на самый взыскательный вкус
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">	
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_1_3.png" alt="">
+							</div>
+							<div class="icons_title">
+								СЛОЖНЫЕ эксклюзивные <br>
+								проекты
+							</div>
+							<div class="icons_desc">
+								Разрабатываем  архитектурные объекты <br> площадьдью более 1200 кв. м.
+							</div>
+						</div>
+					</div>
+					
+				</div><!-- /. row icons -->
+
+				<!-- row icons -->
+				<div class="row row_icons">
+					<div class="col-12">
+						<h3>Производственные возможности </h3>
+						<p>ДревМастер имеет 3 производственные площадки в центре Екатеринбурга (2 открытые и 1 закрытая), полностью оснащенные для строительства домов из дерева и бань. Заказчик имеет возможность контролировать процесс рубки сруба в любое удобное для него время.</p>													
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_2_1.png" alt="">
+							</div>
+							<div class="icons_title">
+									3 производственные<br> площадки в центре 						
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_2_2.png" alt="">
+							</div>
+							<div class="icons_title">
+									полный контроль рубки <br> сруба pаказчиком
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">	
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_2_3.png" alt="">
+							</div>
+							<div class="icons_title">
+									краны, установки <br> высокого давления
+							</div>
+						</div>
+					</div>
+					
+				</div><!-- /. row icons -->
+
+				<!-- row icons -->
+				<div class="row row_icons">
+					<div class="col-12">
+						<h3>Строительные возможности</h3>
+						<p>В штате компании несколько бригад рубщиков и отделочников под руководством опытных прорабов, что позволяет вести работы сразу по нескольким срубам. Деревянные дома и бани возможно строить любой площади, этажности без ограничений.</p>													
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_3_1.png" alt="">
+							</div>
+							<div class="icons_title">
+									специализация по <br>
+									окоренноу бревну						
+							</div>
+							<div class="icons_desc">
+								Проектируем рубленные дома более 10 лет, что исключает любые ошибки и недочеты
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_3_2.png" alt="">
+							</div>
+							<div class="icons_title">
+									ведение строительства, <br>
+									архитектурный надзор
+							</div>
+							<div class="icons_desc">
+									На каждом этапе ведется архитектурный надзор по проектной документации 
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">	
+						<div class="row_icons--item icons">
+							<div class="icons_img">
+								<img src="img/ico_3_3_.png" alt="">
+							</div>
+							<div class="icons_title">
+									взаимодействие  <br>
+									«заказчик- строитель»  <br>
+									в рамках 1 команды
+							</div>
+							<div class="icons_desc">
+									Контроль строительства  через видеонаблюдение на строительной площадке
+							</div>
+						</div>
+					</div>
+					
+				</div><!-- /. row icons -->
 			</div>
-
-			<!-- row icons -->
-			<div class="row row_icons">
-				<div class="col-12">
-					<h3>Архитектурные возможности</h3>
-					<p>С вами работают лучшие штатные архитекторы в области деревянного домостроения. Их основная специализация - деревянные конструкции, которые имеют массу нюансов, не учитываемых архитекторами широкого профиля. Опыт разработки в том числе усадеб больших площадей!</p>													
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_1_1.png" alt="">
-						</div>
-						<div class="icons_title">
-							высококлассные <br> специалисты в штате								
-						</div>
-						<div class="icons_desc">
-							В нашей команде работают только <br> штатные архитекторы
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_1_2.png" alt="">
-						</div>
-						<div class="icons_title">
-							Проектироваание домов <br>
-							в стилях рустик, шале, ...
-						</div>
-						<div class="icons_desc">
-							Проекты выполнены в современных <br> стилях на самый взыскательный вкус
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">	
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_1_3.png" alt="">
-						</div>
-						<div class="icons_title">
-							СЛОЖНЫЕ эксклюзивные <br>
-							проекты
-						</div>
-						<div class="icons_desc">
-							Разрабатываем  архитектурные объекты <br> площадьдью более 1200 кв. м.
-						</div>
-					</div>
-				</div>
-				
-			</div><!-- /. row icons -->
-
-			<!-- row icons -->
-			<div class="row row_icons">
-				<div class="col-12">
-					<h3>Производственные возможности </h3>
-					<p>ДревМастер имеет 3 производственные площадки в центре Екатеринбурга (2 открытые и 1 закрытая), полностью оснащенные для строительства домов из дерева и бань. Заказчик имеет возможность контролировать процесс рубки сруба в любое удобное для него время.</p>													
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_2_1.png" alt="">
-						</div>
-						<div class="icons_title">
-								3 производственные<br> площадки в центре 						
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_2_2.png" alt="">
-						</div>
-						<div class="icons_title">
-								полный контроль рубки <br> сруба pаказчиком
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">	
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_2_3.png" alt="">
-						</div>
-						<div class="icons_title">
-								краны, установки <br> высокого давления
-						</div>
-					</div>
-				</div>
-				
-			</div><!-- /. row icons -->
-
-			<!-- row icons -->
-			<div class="row row_icons">
-				<div class="col-12">
-					<h3>Строительные возможности</h3>
-					<p>В штате компании несколько бригад рубщиков и отделочников под руководством опытных прорабов, что позволяет вести работы сразу по нескольким срубам. Деревянные дома и бани возможно строить любой площади, этажности без ограничений.</p>													
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_3_1.png" alt="">
-						</div>
-						<div class="icons_title">
-								специализация по <br>
-								окоренноу бревну						
-						</div>
-						<div class="icons_desc">
-							Проектируем рубленные дома более 10 лет, что исключает любые ошибки и недочеты
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_3_2.png" alt="">
-						</div>
-						<div class="icons_title">
-								ведение строительства, <br>
-								архитектурный надзор
-						</div>
-						<div class="icons_desc">
-								На каждом этапе ведется архитектурный надзор по проектной документации 
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">	
-					<div class="row_icons--item icons">
-						<div class="icons_img">
-							<img src="img/ico_3_3_.png" alt="">
-						</div>
-						<div class="icons_title">
-								взаимодействие  <br>
-								«заказчик- строитель»  <br>
-								в рамках 1 команды
-						</div>
-						<div class="icons_desc">
-								Контроль строительства  через видеонаблюдение на строительной площадке
-						</div>
-					</div>
-				</div>
-				
-			</div><!-- /. row icons -->
 		</div>
-		
 	</section><!-- /. about company -->
 
 
 
 	<!-- main contact -->
 	<section class="m_contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="title">Любой сруб повторим для вас!</div>
-					<div class="m_contact--content">
-						<small>Позвоните прямо сейчас по телефону</small>
-						<a href="tel:+7(343)383-51-14">+7(343)383-51-14</a>
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title">Любой сруб повторим для вас!</div>
+						<div class="m_contact--content">
+							<small>Позвоните прямо сейчас по телефону</small>
+							<a href="tel:+7(343)383-51-14">+7(343)383-51-14</a>
 
-						<small>или</small>
-						Закажите экскурсию на производство
-						<form action="" class="m_contact_form classic">
-							<input type="text" name="data" placeholder="e-mail/телефон">
-							<button class="btn_link">получить предложение</button>
-						</form>
+							<small>или</small>
+							Закажите экскурсию на производство
+							<form action="" class="m_contact_form classic">
+								<input type="text" name="data" placeholder="e-mail/телефон">
+								<button class="btn_link">получить предложение</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1852,57 +1909,59 @@
 
 	<!-- footer -->
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-6 col-md-3">
-					<div class="footer_menu">
-						<div class="footer_menu--title">Каталог услуг и проектов</div>
-						<ul>
-							<li><a href="#">архитектурное бюро</a></li>
-							<li><a href="#">Готовые проекты</a></li>
-							<li><a href="#">Дом «под ключ»</a></li>
-							<li><a href="#">Срубы</a></li>
-							<li><a href="#">отделка</a></li>
-							<li><a href="#">Магазин</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-6 col-md-3">
-					<div class="footer_menu">
-						<div class="footer_menu--title">Информация</div>
-						<ul>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Акции</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Фото/видео</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 col-md-6">
-					<div class="footer_info">
-						<div class="footer_info--part">
-							<h3>Реквизиты ООО "Древ Мастер"</h3>
-							<p>620141, г. Екатеринбург, <br>
-							ул. Завокзальная, 5</p>
-							<p>ИНН 6678055872  /  КПП 667801001</p>
-							<p>ОГРН 1156678002711</p>
-						</div>
-						<div class="footer_info--part">
-							<h3>Банковские реквизиты:</h3>
-							<p>р/счет №40702810424040000330 </p>
-							<p>в Филиал ПАО "БАНК УРАЛСИБ" в <br>
-							г. Екатеринбург,</p>
-							<p>БИК 046577446</p>
-							<p>к/счет №  30101810165770000446</p>
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-3">
+						<div class="footer_menu">
+							<div class="footer_menu--title">Каталог услуг и проектов</div>
+							<ul>
+								<li><a href="#">архитектурное бюро</a></li>
+								<li><a href="#">Готовые проекты</a></li>
+								<li><a href="#">Дом «под ключ»</a></li>
+								<li><a href="#">Срубы</a></li>
+								<li><a href="#">отделка</a></li>
+								<li><a href="#">Магазин</a></li>
+							</ul>
 						</div>
 					</div>
-				</div>
+					<div class="col-6 col-md-3">
+						<div class="footer_menu footer_menu2">
+							<div class="footer_menu--title">Информация</div>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Фото/видео</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="footer_info">
+							<div class="footer_info--part">
+								<h3>Реквизиты ООО "Древ Мастер"</h3>
+								<p>620141, г. Екатеринбург, <br>
+								ул. Завокзальная, 5</p>
+								<p>ИНН 6678055872  /  КПП 667801001</p>
+								<p>ОГРН 1156678002711</p>
+							</div>
+							<div class="footer_info--part">
+								<h3>Банковские реквизиты:</h3>
+								<p>р/счет №40702810424040000330 </p>
+								<p>в Филиал ПАО "БАНК УРАЛСИБ" в <br>
+								г. Екатеринбург,</p>
+								<p>БИК 046577446</p>
+								<p>к/счет №  30101810165770000446</p>
+							</div>
+						</div>
+					</div>
 
-				<div class="col-12">
-					<div class="copyright">
-						<p>Copyright © 2006-2019 ООО «Древ Мастер». все права защищены. Любое копирование материалов сайта считается незаконным.</p>
+					<div class="col-12">
+						<div class="copyright">
+							<p>Copyright © 2006-2019 ООО «Древ Мастер». все права защищены. Любое копирование материалов сайта считается незаконным.</p>
+						</div>
 					</div>
 				</div>
 			</div>

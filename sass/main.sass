@@ -133,6 +133,8 @@ header
 		.menu_bottom--social
 			a
 				opacity: 1
+	.toggler_close
+		display: none
 	.menu_wrapper
 		height: 100%
 		display: flex
@@ -180,7 +182,8 @@ header
 .header_top
 	display: flex
 	position: absolute
-	width: 1170px
+	max-width: 1170px
+	width: 100%
 	margin:
 		top: 0 
 		left: 24.37%
@@ -228,10 +231,37 @@ header
 			font-size: 12px
 			font-weight: 400
 			line-height: 14.4px
-	.top_search span
-		opacity: .5
+	.top_search 
+		input
+			opacity: .5
+			width: 88px
+			border: none
+			background: none
+			color: #ffffff
+			font-family: Roboto
+			font-size: 12px
+			font-weight: 400
+			line-height: 14.4px
+			&::placeholder
+				color: #ffffff
+		button
+			border: none
+			background: url('../img/icon-search.png') no-repeat
+			width: 15px
+			height: 15px
+			vertical-align: middle
+			margin-left: 14px
 	.top_favorite
 		margin-left: 48px
+		cursor: pointer
+		&::after
+			content: ""
+			background: url('../img/icon-favorite.png') no-repeat
+			width: 17px
+			height: 16px
+			display: inline-block
+			vertical-align: middle
+			margin-left: 8px
 .top_menu
 	ul
 		padding-left: 0
@@ -436,6 +466,8 @@ section
 	background-image: url('../img/bg_form.jpg')
 	background-repeat: no-repeat
 	background-position: top right
+	.wrap
+		background: transparent
 	.title
 		color: #fff
 		margin-bottom: 35px
@@ -662,6 +694,7 @@ form.classic
 					color: #014ca0
 
 .gallery_small, .gallery-lg
+	display: block
 	height: 286px
 	border: 4px solid #ffffff
 	background-color: #d0d0d0
@@ -685,6 +718,46 @@ form.classic
 	&:hover
 		.gallery_item--wrapper
 			transform: translateY(0%)
+
+.gallery_small
+	.gallery_video--wrap
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		height: 100%
+		background-image: linear-gradient(to top, #000001 0%, rgba(0, 0, 1, 0) 33%, rgba(0, 0, 0, 0) 100%);
+		padding: 0 22px 15px 11px
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			background: url('../img/icon-play.png') no-repeat
+			background-size: contain
+			width: 47px
+			height: 47px
+			z-index: 2
+			transition: all .3s
+			opacity: 0
+		span
+			height: 48px
+			color: #fefefe
+			font-family: Roboto
+			font-size: 14px
+			line-height: 24px
+			transition: all .3s
+			opacity: .7
+	&:hover
+		text-decoration: none
+		.gallery_video--wrap
+			&::before
+				opacity: 1
+			span
+				opacity: 1
+
+		
 .gallery_desc
 	padding: 24px 43px
 	display: flex
@@ -716,7 +789,6 @@ form.classic
 			display: inline-block
 			vertical-align: middle
 			margin-left: 10px
-
 .m_gallery--links
 	margin-top: 33px
 	display: flex
@@ -744,8 +816,6 @@ form.classic
 			display: block
 			font-size: 14px
 			line-height: 1.4
-			
-
 .gallery_small
 	width: 25%
 .gallery-lg
@@ -849,6 +919,7 @@ form.classic
 		.icons_img
 			padding: 6px 6px
 			width: 75px
+			height: 69px
 			img
 				max-width: 100%
 		.icons_title
@@ -874,6 +945,8 @@ footer
 	min-height: 340px
 	background-color: #e6e6e6
 	padding: 33px 0 22px
+	.wrap
+		background: transparent
 
 	.copyright
 		margin-top: 60px
@@ -939,12 +1012,26 @@ footer
 			text-align: right
 	.left_menu
 		transform: translateX(-100%)
-		height: auto
+		overflow: scroll
 		transition: all .3s
+		padding: 20px 35px
 		&.active
 			transform: translateX(0)
+		.menu_logo
+			margin-bottom: 71px
+			height: 68px
+			img
+				width: auto
+				height: 68px
+				
+		.toggler_close
+			display: block
 		.menu_box--links
 			display: block
+			margin-top: 49px
+			.menu_box--list
+				li a
+					text-transform: none
 		.toggler_close
 			position: absolute
 			display: block

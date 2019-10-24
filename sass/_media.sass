@@ -5,6 +5,103 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    
+    .header_top, .m_services
+        padding-left: 25px
+        padding-right: 25px
+
+    header
+        height: 712px
+    .main_slider__item
+        height: 712px
+        padding: 0 25px
+    .services_item
+        margin-left: auto
+        margin-right: auto
+    .m_services
+        width: 95%
+    .proj_tabs__header
+        font-size: 15px
+    .middle_slider--item, .middle_slider--item.slider_small
+        margin: 10px 15px
+        height: 492px
+        .slider_desc
+            padding: 17px 17px 24px
+        .slider_img
+            height: 202px
+        .slider_bottom
+            display: block
+            .slider_bottom--link
+                margin-top: 15px
+
+    .middle_slider
+        max-width: 656px
+    .slick-slider .slick-dots
+        margin-top: 5px
+
+    .m_projects .tab-content
+        margin-bottom: 54px
+
+    .m_buro--inner
+        height: 450px
+        padding: 0
+        background-position: 82% 100%
+        .buro_form
+            height: 450px
+            margin-right: 0
+            padding: 29px 48px 33px
+            blockquote
+                margin: 10px 0 15px
+                padding: 8px 0
+            small
+                line-height: 20px
+    .m_gallery
+        .title
+            margin-bottom: 10px
+        .nav-pills
+            margin-bottom: 25px
+    .m_gallery--links a
+        height: auto
+        padding: 20px 50px
+        span
+            margin-top: 10px
+
+    .m_about
+        margin-top: 40px
+
+    .m_about--content
+        padding-bottom: 17px
+        margin-bottom: 56px
+        .about_top 
+            min-height: 310px
+            padding: 44px 144px 33px 190px
+            p
+                font-size: 11px
+                margin-bottom: 20px
+            .about_top--name
+                margin-top: 50px
+                &>p
+                    font-size: 19px
+                    margin-bottom: 7px
+                    line-height: 1
+            .about_top--name span
+                width: auto
+                height: auto
+                font-size: 10px
+            img.creator
+                width: 185px
+                height: 270px
+                top: 15px
+                left: -42px
+
+        .about_text
+            
+            h3
+                margin-bottom: 17px
+    
+    .m_contact
+        background-position-x: center
+
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -12,14 +109,221 @@
         width: 50%
     .gallery-lg
         width: 100%
+    .icon_item--desc
+        line-height: 19px
+    
+    .m_projects .nav-pills .nav-item
+        width: 50%
+
+    .slick-arrow.slick-prev
+        left: -15px
+    .slick-arrow.slick-next
+        right: -15px
+
+    .m_buro--inner
+        background-position: 60% 100%
+
+    footer .footer_info
+        display: block
+        .footer_info--part
+            width: 100%
+
+    .m_services
+        .container
+            max-width: 593px
+    .icon_item
+        margin-bottom: 30px
+    .header_top--phone
+        margin-right: 0
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥576px
 +media-breakpoint-down(xs)
+    header
+        height: 350px
+
+    .title
+        font-size: 24px
+        margin-bottom: 25px
+        line-height: 1.4
+
+    .header_top .header_top--phone
+        display: none
+    .top_menu--links .top_favorite span,
+    .top_menu--links .top_search input
+        display: none;
+    .header_top--menu
+        margin-left: 0
+
+    .main_slider__item
+        height: 350px
+
+    .m_services
+        margin-top: 0
+
+    .slider .slider_content
+        padding-bottom: 40px
+
+    .services_item
+        max-width: 100%
+        height: 214px
+        margin-bottom: 17px
+    .services_item .services_item--inner 
+        height: auto
+        p
+            display: none
+    .services_item .services_item--inner a
+        font-size: 14px
+
+    .icon_item
+        height: auto
+        margin-bottom: 20px
+    .icon_item--img
+        height: 65px
+        padding-right: 11px
+    .icon_item--desc
+        width: auto
+
+    .proj_tabs__header
+        padding: 15px 19px 12px
+    .m_projects .nav-pills .nav-item
+        width: 100%
+        a
+            width: 100%
+            max-width: initial
+
+    .m_buro--inner
+        background-image: none
+        .buro_form
+            width: 100%
+            padding-left: 16px
+            padding-right: 16px
+
     .gallery_small, .gallery-lg
         width: 50%
+        height: 159px
+
+    .gallery_small .gallery_video--wrap span
+        font-size: 11px
+        line-height: 1.4
+
+    .m_gallery--links
+        flex-direction: column
+        a
+            font-size: 20px
+            width: 100%
+            & + a
+                margin-top: 10px
+            span
+                font-size: 12px
+    
+    .slider 
+        .slider_content--title
+            font-size: 18px
+        .slider_content--desc
+            font-size: 12px
+        
+
+    .btn_link.btn_link--big
+        width: 128px
+        height: 36px
+        font-size: 14px
+
+    .m_about--content 
+        margin-top: 35px
+        margin-bottom: 32px
+        .about_top
+            margin-left: auto;
+            margin-right: auto;
+            background-size: 25%
+            padding: 44px 33px 41px 24px
+            img.creator
+                position: static
+                float: left
+                margin-top: -84px
+                height: 159px
+                width: 109px
+                margin-left: -26px
+                margin-right: 10px
+                margin-bottom: 10px
+
+    .row_icons
+        margin-bottom: 32px
+
+    form.classic input
+        width: 100%
+
+    .m_services
+        padding-top: 40px
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+        .col-6
+            padding-left: 8px
+            padding-right: 8px
+    .services_item .services_item--inner
+        padding-left: 0
+        padding-right: 0
+
+
+    .middle_slider--item .slider_img, .middle_slider--item.slider_small .slider_img
+        height: 187px
+        img
+            height: 100%
+
+    .m_projects .tab-content
+        margin-bottom: 15px
+    .m_about
+        margin-top: 15px
+
+    .m_contact .title
+        text-transform: uppercase
+        margin-bottom: 21px
+
+    .m_contact--content 
+        font-size: 20px
+        small
+            font-size: 16px
+        a
+            font-size: 18px
+
+    .main_slider.slick-slider .slick-dots
+        bottom: 10px
+    .main_slider.slick-slider .slick-dots li
+        width: 7px
+        height: 7px
+        margin: 0 4px
+
+    footer
+        padding-bottom: 0
+        .wrap
+            padding: 0 12px
+            .footer_menu--title
+                font-size: 11px
+            .col-6, .col-12
+                padding: 0
+            .footer_menu2
+                padding-left: 19px
+            .footer_menu ul li a
+                font-size: 13px
+            .footer_info
+                margin-top: 18px
+                .footer_info--part 
+                    h3
+                        font-size: 11px
+                        margin-bottom: 12px
+                    p
+                        font-size: 12px
+                        margin-bottom: 12px
+                    &+.footer_info--part 
+                        margin-top: 22px
+            .copyright
+                margin-top: 30px
+                font-size: 12px
+                line-height: 1.5
+                padding: 12px 0
 
 
 /*==========  Mobile First  ==========*/
