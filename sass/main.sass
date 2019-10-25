@@ -101,9 +101,7 @@ a
 		right: 11.91%
 	
 
-header
-	height: 940px
-	position: relative
+
 
 .title
 	color: #000000
@@ -128,7 +126,7 @@ header
 	left: 0
 	top: 0
 	z-index: 10001
-	&.content
+	&.content,&.inner
 		background-color: #5a5855
 		.menu_bottom--social
 			a
@@ -179,41 +177,81 @@ header
 		
 
 //TOP MENU
-.header_top
-	display: flex
-	position: absolute
-	max-width: 1170px
+header
+	// height: 940px
+	position: fixed
 	width: 100%
-	margin:
-		top: 0 
-		left: 24.37%
-		right: 14.67%
-		bottom: 0
-	z-index: 101
 	top: 0
-	height: 84px
-	padding: 25px 10px 20px
-	border-bottom: 
-		width: 1px
-		style: solid
-		color: rgba(255,255,255,.3)
+	left: 0
+	z-index: 1
+	color: #ffffff
+	.top_menu
+		ul
+			padding-left: 0
+			list-style: none
+			li
+				display: inline-block
+				a
+					font-family: Cambria
+					color: #ffffff
+					font-size: 14px
+					font-weight: 400
+					line-height: 24px
+					text-transform: uppercase
+					&:hover
+						@include border-bottom
+				& + li
+					margin-left: 15px
+	a
+		color: #fff
+	&.inner
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
+		background-color: #ffffff
+		height: 153px
+		color: #000
+		.header_top--phone
+			a
+				color: #000
+		.top_menu ul li 
+			a
+				color: #000
+			&.active a, &:hover a
+				color: #3880b8
+
+	.header_top
+		display: flex
+		max-width: 1170px
+		width: 100%
+		margin:
+			top: 0 
+			left: 24.37%
+			right: 14.67%
+			bottom: 0
+		z-index: 101
+		top: 0
+		height: 84px
+		padding: 25px 10px 20px
+		border-bottom: 
+			width: 1px
+			style: solid
+			color: rgba(255,255,255,.3)
+		
 
 .header_top--phone
 	margin-right: 121px
 	span
 		display: block
-		opacity: 0.5;
-		color: #ffffff;
-		font-family: Roboto;
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 14.4px;
+		opacity: 0.5
+		
+		font-family: Roboto
+		font-size: 12px
+		font-weight: 400
+		line-height: 14.4px
 	a
-		color: #ffffff;
-		font-family: Cambria;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
+		font-family: Cambria
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
 		&:hover
 			@include border-bottom
 
@@ -226,7 +264,6 @@ header
 	justify-content: flex-end
 	.top_search, .top_favorite
 		span
-			color: #ffffff
 			font-family: Roboto
 			font-size: 12px
 			font-weight: 400
@@ -237,7 +274,6 @@ header
 			width: 88px
 			border: none
 			background: none
-			color: #ffffff
 			font-family: Roboto
 			font-size: 12px
 			font-weight: 400
@@ -262,23 +298,7 @@ header
 			display: inline-block
 			vertical-align: middle
 			margin-left: 8px
-.top_menu
-	ul
-		padding-left: 0
-		list-style: none
-		li
-			display: inline-block
-			a
-				font-family: Cambria
-				color: #ffffff
-				font-size: 14px
-				font-weight: 400
-				line-height: 24px
-				text-transform: uppercase
-				&:hover
-					@include border-bottom
-			& + li
-				margin-left: 15px
+
 
 
 //MAIN SLIDER
