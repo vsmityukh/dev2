@@ -55,6 +55,15 @@ $(function() {
 		]
 	})
 
+	$('.more_photo--slider').slick({
+		dots: false,
+		arrows: true,
+		vertical: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		verticalSwiping: true,
+	  });
+
 	$(document).scroll(function(){
 		var offset = $(document).scrollTop(),
 			header = $('header').height();

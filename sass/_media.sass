@@ -102,9 +102,30 @@
     .m_contact
         background-position-x: center
 
+    .review_item
+        .review_text
+            padding-top: 19px
+            padding-right: 6%
+            h3
+                line-height: 1
+                margin-bottom: 10px
+
 
 // ≥992px
 +media-breakpoint-down(md)
+
+    .btn_link.btn_link--favorite
+        float: none
+        margin-bottom: 24px
+
+    .object_fastLink
+        justify-content: space-between
+    
+        .object_fastLink--item
+            margin-bottom: 10px
+            & +.object_fastLink--item
+                margin-left: 0
+
     .gallery_small
         width: 50%
     .gallery-lg
@@ -136,6 +157,8 @@
     .header_top--phone
         margin-right: 0
 
+    
+
 // ≥768px
 +media-breakpoint-down(sm)
 
@@ -143,6 +166,42 @@
 +media-breakpoint-down(xs)
     header
         height: 350px
+
+    .subtitle
+        margin-bottom: 23px
+    
+    .work_info
+        margin-top: 45px
+        .row_icons .icons
+            justify-content: center
+            .icons_title
+                text-align: center
+                padding-left: 0
+                margin-top: 12px
+            .icons_img
+                text-align: center
+                width: 100%
+            .icons_desc
+                text-align: center
+                margin-top: 9px
+
+    .review_item
+        .review_photo
+            padding-right: 0
+            width: 100%
+            text-align: center
+        .review_text
+            width: 100%
+            margin-top: 23px
+            padding-top: 0
+            padding-right: 0%
+            margin-bottom: 13px
+            h3
+                font-size: 20px
+                margin-bottom: 10px
+            small
+                font-size: 13px
+                margin-bottom: 23px
 
     .title
         font-size: 24px

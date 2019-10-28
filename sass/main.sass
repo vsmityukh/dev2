@@ -42,7 +42,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	background: #fff
+	background-color: #f8f8f8
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -72,6 +72,17 @@ body
 		font-size: 16px
 		width: 170px
 		height: 48px
+	&.btn_link--favorite
+		width: 231px
+		height: 36px
+		font-size: 16px
+		font-family: Roboto
+		text-transform: none
+		letter-spacing: 0.16px
+		float: right
+		img
+			width: 17px
+			margin-left: 9px
 
 .img-responsive
 	display: block
@@ -99,6 +110,10 @@ a
 	margin: 
 		left: 22.13%
 		right: 11.91%
+.inner_wrap
+	margin: 
+		left: 22.13%
+		right: 11.91%
 	
 
 
@@ -113,7 +128,13 @@ a
 	margin-bottom: 24px
 	&.upper
 		text-transform: uppercase
-		
+	&.inner
+		text-align: left
+.subtitle
+	color: #000000
+	font-size: 30px	
+	margin-top: 15px
+	margin-bottom: 35px	
 
 //LEFT MENU
 .left_menu
@@ -934,6 +955,7 @@ form.classic
 
 	.icons
 		display: flex
+		align-items: center
 		flex-wrap: wrap
 		margin-bottom: 35px
 		.icons_img
@@ -943,7 +965,6 @@ form.classic
 			img
 				max-width: 100%
 		.icons_title
-			padding-top: 16px
 			color: #000000
 			font-family: Cambria
 			font-size: 16px
@@ -1012,6 +1033,162 @@ footer
 	display: none
 
 
+.inner_wrap
+	padding-top: 180px
+
+//CRUMBS
+.crumbs
+	margin-bottom: 48px
+	ul
+		list-style: none
+		padding-left: 0
+		margin-bottom: 0
+		li
+			display: inline-block
+			line-height: 1
+			& + li
+				margin-left: 5px
+			a
+				color: #3880b8
+				font-family: Roboto
+				font-size: 14px
+				line-height: 1.4
+				letter-spacing: 0.14px
+				&:hover
+					text-decoration: underline
+					color: #3880b8
+				&:after
+					content: "»"
+					display: inline-block
+					vertical-align: middle
+					position: relative
+					top: -2px
+					margin-left: 5px
+			span
+				font-family: Roboto
+				font-size: 14px
+				color: #808080
+				letter-spacing: 0.14px
+
+
+//OBJECT
+.object
+	margin-bottom: 35px
+
+.object_fastLink
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 23px
+	.object_fastLink--item
+		img
+			width: 39px
+			height: 39px
+		span
+			opacity: 0.9
+			color: #797979
+			font-family: Roboto
+			font-size: 13px
+			letter-spacing: 0.14px
+			display: inline-block
+			vertical-align: middle
+			margin-left: 4px
+			text-decoration: underline
+		& + .object_fastLink--item
+			margin-left: 15px
+		&:hover
+			span
+				text-decoration: none
+	
+.main_photo
+	position: relative
+	max-width: 754px
+	.big_photo
+		img
+			max-width: 100%
+
+.photo_sticker
+	position: absolute
+	left: 0
+	top: 0
+
+.more_photo
+	display: flex
+	justify-content: flex-end
+
+	.more_photo--slider
+		width: 172px
+		margin-right: 96px
+		padding-top: 44px
+		padding-bottom: 44px
+		margin-top: 20px
+		.more_photo--item
+			height: 115px
+			margin: 6px 0
+		.slick-arrow.slick-prev
+			top: 0
+			margin-top: 0
+			left: 50%
+			transform: translate(-50%)  rotate(-90deg)
+			&:hover
+				transform: translate(-50%) rotate(90deg)
+		.slick-arrow.slick-next
+			top: initial
+			bottom: 0
+			margin-top: 0
+			left: 50%
+			transform: translate(-50%)  rotate(90deg)
+			&:hover
+				transform: translate(-50%) rotate(-90deg)
+
+//object review
+.review_item
+	display: flex
+	flex-wrap: wrap
+	padding: 12px
+	border: 1px solid #fae300
+	.review_photo
+		width: 33.6607%
+		padding-right: 26px
+		img
+			max-width: 100%
+	.review_text
+		width: 66.3393%
+		padding-top: 44px
+		color: #000000
+		padding-right: 6%
+		h3
+			font-size: 24px
+			margin-bottom: 15px
+			font-weight: 400
+		small
+			font-size: 16px
+			line-height: 1.5
+			text-transform: uppercase
+			margin-bottom: 25px
+			display: block
+		p
+			opacity: 0.75
+			color: #000000
+			font-family: Roboto
+			font-size: 14px
+			line-height: 24px
+
+
+//WORK INFO
+.work_info
+	margin-bottom: 35px
+	margin-top: 64px
+	padding-top: 32px
+	border-top: 1px solid rgba(124,108,90,.5)
+	border-bottom: 1px solid rgba(124,108,90,.5)
+	.subtitle
+		margin-top: 0
+		margin-bottom: 12px
+	.row_icons
+		border-bottom: none
+		margin-bottom: 0
+
+
 @media (max-width: 1600px)
 	.top_menu--links
 		flex-direction: column
@@ -1057,12 +1234,12 @@ footer
 			display: block
 			left: 20px
 			top: 29px
-	.header_top,.wrap, .slider .slider_content
+	.header_top,.wrap, .slider .slider_content, .inner_wrap
 		margin-left: auto
 		margin-right: auto
-	.header_top
-		left: 50%
-		transform: translateX(-50%)
+	header .header_top
+		margin-left: auto
+		margin-right: auto
 	.top_menu
 		nav
 			display: none
