@@ -64,6 +64,13 @@ $(function() {
 		verticalSwiping: true,
 	  });
 
+	$('.video_list').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	  });
+
 	$(document).scroll(function(){
 		var offset = $(document).scrollTop(),
 			header = $('header').height();
@@ -75,6 +82,28 @@ $(function() {
 
 	$('#menuToggler, #menuClose').on('click', function(){
 		$('#leftMenu').toggleClass('active')
+	})
+
+
+	$('.toggle_more').on('click', function(e){
+		e.preventDefault();
+		$(this).hide().prev().toggleClass('open')
+	})
+
+	//tabs logic
+	$('.tab_links a').on('click', function(e){
+		e.preventDefault();
+
+		var parent = $(this).closest('.tab_links'),
+			targetWrapper = $(parent.data('target')),
+			targetItem = $($(this).attr('href'));
+
+		parent.find('.active').removeClass('active');
+		$(this).addClass('active');
+
+		targetWrapper.find('.active').removeClass('active');
+		targetItem.addClass('active')
+
 	})
 
 
