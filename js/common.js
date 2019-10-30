@@ -68,7 +68,25 @@ $(function() {
 		dots: false,
 		arrows: true,
 		slidesToShow: 3,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					arrows: true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					arrows: true,
+					dots: false
+				}
+			}
+		]
 	  });
 
 	$(document).scroll(function(){
@@ -89,6 +107,8 @@ $(function() {
 		e.preventDefault();
 		$(this).hide().prev().toggleClass('open')
 	})
+
+
 
 	//tabs logic
 	$('.tab_links a').on('click', function(e){

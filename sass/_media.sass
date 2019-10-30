@@ -5,13 +5,30 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-    
+    .tabs_content
+        padding: 33px
+        .object_tabs--content
+            display: block
+        .content_text
+            max-width: 100%
+            width: 100%
+        .content_link
+            width: 100%
+            margin-right: 0
+            margin-top: 44px
+
+
+    .social_form
+        display: block
+        form
+            width: 100%
+        .social_links
+            width: 100%
+            margin-top: 12px
     .header_top, .m_services
         padding-left: 25px
         padding-right: 25px
 
-    header
-        height: 712px
     .main_slider__item
         height: 712px
         padding: 0 25px
@@ -113,6 +130,25 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    
+    .object_progress
+        .progress_item
+            .progress_data
+                padding-left: 33px
+                width: 100%
+                .progress_title
+                    .mobile_date
+                        display: block
+                        line-height: 1
+                        margin-bottom: 5px
+                .progress_img
+                    margin: 0 -9px
+                    a   
+                        width: 25%
+                        padding: 9px
+            .progress_month
+                display: none
+                
 
     .btn_link.btn_link--favorite
         float: none
@@ -161,11 +197,58 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
-
+    .project_video
+        .video_list
+            .slick-arrow
+                width: 32px
+                height: 32px
+                margin-top: -16px
+                background-size: 28%
+                &.slick-prev
+                    left: 18px
+                &.slick-next
+                    right: 18px
+                    
+    .social_form
+        padding: 21px 11px 25px
+        form
+            width: 100%
+            max-width: 480px
+            margin-right: 0
+            input, .btn_link
+                width: 100%
+                max-width: 480px
+                margin: 7px auto
+                display: block
+        .social_links
+            span
+                display: block
+                margin-bottom: 11px
+        
 // ≥576px
 +media-breakpoint-down(xs)
-    header
-        height: 350px
+    .project_video
+        .video_list
+            width: 288px
+            margin-left: auto
+            margin-right: auto
+    .object_progress .progress_item .progress_data 
+        .progress_img 
+            margin: 0 -5px
+            a
+                width: 50%
+                padding: 5px
+    .tab_links 
+        li 
+            a
+                font-size: 12px
+                padding: 11.5px
+    .tabs_content
+        padding: 25px 11px
+        .object_tabs--content
+        .content_text
+        .content_link
+            margin-top: 33px
 
     .subtitle
         margin-bottom: 23px
