@@ -1,6 +1,14 @@
 section.actions {
     margin-top: 153px;
 }
+
+.ui-widget{
+    font-family: Roboto !important;
+    
+}
+.ui-helper-reset{
+    line-height: 24px !important;
+}
 .breadcrumbs ul li a {
     color: #3880b8;
     letter-spacing: 0.14px;
@@ -277,12 +285,11 @@ span.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e {
      outline: none;
 }
 
-.block-collapse2 .ui-accordion .ui-accordion-content {
-    padding: 1em 2.2em;
+.block-collapse1 .ui-accordion .ui-accordion-content {
+    padding: 15px 0px;
     border-top: 0;
     overflow: auto;
     height: auto !important;
-    background-color: #dbdbdb;
 }
 
 .block-collapse2 .ui-accordion .ui-accordion-header {
@@ -607,7 +614,7 @@ li.active:hover {
     cursor: pointer;
     position: relative;
     margin: 2px 0 0 0;
-    padding: .5em .5em .5em .7em;
+    padding: 15px 0;
     font-size: 100%;
     display: flex;
     justify-content: space-between;
@@ -634,13 +641,16 @@ li.active:hover {
 
 .block-collapse1 .bc-title {
     color: #000;
+    line-height: 1;
 }
 .collapse1-left h2 {
     font-size: 16px;
+    margin-bottom: 0;
 }
 .collapse1-left p {
     font-size: 14px;
     color: #808080;
+    line-height: 24px;
 }
 .collapse1-right {
     font-size: 16px;
@@ -656,19 +666,15 @@ li.active:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.collapse1-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid #bdc4d4;
     margin-bottom: 15px;
+    padding: 0 0 15px 15px;
 }
+
 
 .block-collapse1 .ui-widget-content {
     border: none;
-    background: #ffffff;
+    background: transparent;
     color: #333333;
 }
 
