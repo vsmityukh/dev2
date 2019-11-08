@@ -5,6 +5,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    .big_item
+        height: auto
+        .big_item--desc
+            padding: 16px 18px 16px 23px
+            .big_item--charact-inner
+                height: auto
+                div
+                    width: 100%
+
     header 
         .header_top
             padding-left: 25px
@@ -136,6 +145,19 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    .buro_steps--item span
+        height: 48px
+    .big_item
+        max-width: 559px
+        margin-left: auto
+        margin-right: auto
+        display: block
+        .big_item--img
+            width: 100%
+            max-width: 100%
+        .big_item--desc
+            width: 100%
+
     .m_projects--inner .nav
         height: 120px
     header nav.top_nav ul
@@ -173,7 +195,7 @@
                     a   
                         width: 25%
                         padding: 9px
-            .progress_month
+            .progress_month, .progress_icon
                 display: none
                 
 
@@ -228,12 +250,72 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+    section.pnf
+        height: calc(100VH - 60px)
+    section.pnf h2
+        font-size: 98px
+    section.pnf small
+        font-size: 32px
+    section.pnf .desc
+        text-align: center
+        margin-top: 15px
+        margin-bottom: 20px
+    section.pnf .links
+        display: block
+        a
+            display: block
+            text-align: center
+
+    .buro .text h2
+        line-height: 1
+    .subtitle
+        line-height: 1
+    .buro_steps--item span
+        height: auto
+    .buro .object_progress
+        margin-top: 20px
+        margin-bottom: 30px
+    .m_buro--inner.buro
+        height: auto
+        background-image: none !important
+        padding: 58px 16px 66px 18px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: rgba(52,46,40,.85)
+        .buro_form
+            max-width: 277px
+            padding: 0
+            height: auto
+            width: 100%
+            background: transparent
+    .inner_wrap
+        padding-top: 154px
+    .accordion_box
+        margin-bottom: 30px
+        margin-top: 0
+    .proj--row
+        margin-bottom: 0
+    .paginat
+        margin-bottom: 40px 
+        .btn_link
+            margin-top: 0
+    .small_card 
+        max-width: 342px
+        margin-left: auto
+        margin-right: auto
+        .slider_img img
+            height: auto
+        .slider_img
+            height: auto
     .header_top--toggler
         position: absolute
         top: 32px
-    header.inner .header_top .header_top--logo
-        margin-left: auto
-        margin-right: auto
+    header.inner 
+        height: auto
+        .header_top .header_top--logo
+            margin-left: auto
+            margin-right: auto
     header.inner .top_menu--links .top_favorite::after
         width: 22px
         height: 23px
@@ -330,6 +412,17 @@
         
 // ≥576px
 +media-breakpoint-down(xs)
+    section.pnf h2
+        font-size: 58px
+    section.pnf small
+        font-size: 24px
+    section.pnf .links a
+        font-size: 14px
+    section.pnf .desc
+        font-size: 12px
+    footer.pnf .wrap .copyright
+        margin-top: 0
+
     .m_projects--inner .nav
         height: 105px
     .big_photo--slider

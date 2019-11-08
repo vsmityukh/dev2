@@ -51,6 +51,52 @@ body
 		&:required:valid
 			border-color: green
  
+.paginat
+	margin-bottom: 53px
+	.btn_link
+		margin-top: 33px
+	ul
+		list-style: none
+		text-align: center
+		padding-left: 0
+		li
+			display: inline-block
+			a
+				color: #585654
+				width: 34px
+				height: 34px
+				margin: 0 3.5px
+				font-family: Roboto
+			&.prev, &.next
+				opacity: 0.4
+				a
+					margin: 0 10px
+				&:hover
+					opacity: .75
+					a
+						text-decoration: none
+			&.prev::before,&.next::after
+				content: ""
+				width: 15px
+				height: 7px
+				background: url('../img/next-arrow.svg') no-repeat
+				display: inline-block
+				vertical-align: middle
+			&.prev::before
+				margin-right: 7px
+				transform: rotate(180deg)
+
+			&.link a
+				border: 1px solid #cbcbc7
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+			&.link:hover a:hover, &.active a
+					background: rgba(88,86,84,.2)
+					text-decoration: none
+					color: #fff
+
 .btn_link
 	font-family: Cambria
 	border-radius: 5px
@@ -838,6 +884,25 @@ form.classic
 			display: block
 			margin-bottom: 20px
 
+	&.buro
+		height: 689px
+		
+		.buro_form
+			width: 462px
+			height: 558px
+			padding: 100px 99px 0
+			background: rgba(52,46,40,.85)
+			p
+				font-size: 30px
+				font-weight: 400
+				line-height: 36px
+				text-transform: uppercase
+			input
+				width: 100%
+			.btn_link
+				margin-left: auto
+				margin-right: auto
+
 //GALLERY MAIN PAGE
 .m_gallery
 	.gallery_wrap
@@ -1106,9 +1171,58 @@ form.classic
 			line-height: 24px
 			
 
+//PAGE NOT FOUND
+section.pnf
+	padding-top: 153px
+	height: calc(100vh - 53px)
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	background: transparent
+	h2
+		font-size: 200px
+		font-weight: 700
+		line-height: 1
+	small
+		font-size: 60px
+		line-height: 1
+		font-weight: 400
+	.desc
+		margin-top: 49px
+		margin-bottom: 53px
+		color: #808080
+		font-family: Roboto
+		font-size: 14px
+		letter-spacing: 0.14px
+		a
+			display: block
+			line-height: 24.02px
+			text-align: center
+			color: #7dacd0
+	.links
+		display: flex
+		justify-content: space-evenly
+		a
+			color: #3880b8
+			font-family: Cambria
+			font-size: 18px
+			text-decoration: underline
+			margin: 0 15px
+			&:hover
+				text-decoration: none
+
+
+	
+
 //FOOTER
+footer.pnf
+	padding: 0
+	.copyright
+		margin-top: 0
+		border-top: 0
 footer
-	min-height: 340px
+	// min-height: 340px
 	background-color: #e6e6e6
 	padding: 33px 0 22px
 	.wrap
@@ -1160,6 +1274,8 @@ footer
 
 .inner_wrap
 	padding-top: 180px
+	&.inner_wrap--two
+		padding-top: 57px
 
 //CRUMBS
 .crumbs
@@ -1523,7 +1639,9 @@ footer
 				color: #000000
 				font-size: 24px
 				line-height: 1
-	
+		.progress_icon
+			width: 122px
+			padding-left: 14px
 
 //SOCIAL FORM
 .social_form
@@ -1579,6 +1697,73 @@ footer
 	z-index: 101
 	background: url('../img/top.png') no-repeat
 	cursor: pointer
+
+
+//BIG ITEM
+.big_item
+	height: 375px
+	border: 1px solid #e5e5e5
+	margin-bottom: 21px
+	display: flex
+	position: relative
+	.object_fastLink
+		margin: 7px -16px 9px
+		a:hover
+			text-decoration: none
+	.big_item--img
+		width: 50%
+		max-width: 559px
+		img
+			max-width: 100%
+	.big_item--desc
+		width: 50%
+		padding: 26px 28px 0 43px
+		a
+			color: #3880b8
+			font-size: 24px
+			margin-bottom: 7px
+		p
+			color: #808080
+			font-size: 14px
+			font-family: Roboto, sans-serif
+	.big_item--charact
+		margin-top: 25px
+		padding-top: 22px
+		border-top: 1px solid rgba(189,192,212,.25)
+		
+		h3
+			color: #000000
+			margin-bottom: 5px
+			font-family: Roboto
+			font-size: 16px
+			letter-spacing: 0.16px
+		.big_item--charact-inner
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			height: 85px
+			div
+				width: 45%
+				position: relative
+				display: flex
+				justify-content: space-between
+				&::after
+					content: ""
+					position: absolute
+					bottom: 8px
+					border-bottom: 1px dotted rgba(189,192,212,.8)
+					width: 100%
+					height: 1px
+				span
+					color: #808080
+					font-family: Roboto
+					font-size: 14px
+					line-height: 24px
+					padding: 2px 2px
+					background: #f8f8f8
+					position: relative
+					z-index: 2
+		
 
 
 @media (max-width: 1600px)
@@ -1812,6 +1997,24 @@ footer
 			content: ""
 			display: table
 			width: 100%
+
+
+.buro
+	.object_progress
+		margin-top: 65px
+		margin-bottom: 70px
+	.text
+		font-family: $default-font
+		h2
+			color: #000000
+			font-size: 30px
+			font-family: $default-font
+		h3
+			font-size: 24px
+			margin-top: 1em
+			margin-bottom: .6em
+		p
+			color: #808080
 
 
 

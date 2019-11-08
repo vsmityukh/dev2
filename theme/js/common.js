@@ -55,7 +55,7 @@ $(function() {
 		]
 	})
 
-
+ 
 	$('.big_photo--slider').slick({
 		dots: false,
 		arrows: false,
@@ -180,6 +180,11 @@ $(function() {
 
 	$('.mobile_front').on('click', function(e){
 		$('nav>ul').toggle();
+	})
+
+	//accordion logic
+	$('.accordion_item--title, .accordion_content--item.parent span').on('click', function(){
+		$(this).toggleClass('open').next().slideToggle();
 	})
 
 });
