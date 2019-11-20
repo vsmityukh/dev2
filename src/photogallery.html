@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Фотогалерея</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/style-alex.css">
+
+</head>
+
+<body>
+
+	<!-- left menu block -->
+	<div class="left_menu inner" id="leftMenu">
+		<a href="javascript:;" class="toggler_close" id="menuClose"><img src="img/icon-close.png" alt=""></a>
+		<div class="menu_wrapper">
+
+			<!-- menu logo -->
+			<div class="menu_logo">
+				<img src="img/logo-menu.png" alt="">
+			</div><!-- /. menu logo -->
+
+
+			<!-- menu box -->
+			<div class="menu_box">
+				<div class="menu_box--category">
+					<ul class="menu_box--list">
+						<li><a href="#">Архитектурное бюро</a></li>
+						<li><a href="#">Готовые проекты</a></li>
+						<li><a href="#">дом «под ключ»</a></li>
+						<li><a href="#">Срубы</a></li>
+						<li><a href="#">Отделка</a></li>
+						<li><a href="#">Магазин</a></li>
+					</ul>
+				</div>
+				<div class="menu_box--links">
+					<ul class="menu_box--list">
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Фото/Видео</a></li>
+						<li><a href="#">блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /. menu box -->
+			
+
+			<!-- menu bottom -->
+			<div class="menu_bottom">
+				<a href="#" class="btn_link">Заказать консультацию</a>
+				<div class="menu_bottom--info">
+					<p>Екатеринбург, ул. Заводская, стр. 5</p>
+					<p>Время работы: пн.-сб с 08:00 до 17:00</p>
+					<a href="mailto:drev-master@bk.ru">drev-master@bk.ru</a> 
+				</div>
+
+				<div class="menu_bottom--social">
+					<a href="#"><img src="img/icon-youtube.png" alt=""></a>
+					<a href="#"><img src="img/icon-vk.png" alt=""></a>
+					<a href="#"><img src="img/icon-fb.png" alt=""></a>
+					<a href="#"><img src="img/icon-t.png" alt=""></a>
+				</div>
+			</div><!-- /. menu bottom -->
+
+		</div>
+	</div>
+	<!-- /. left menu block -->
+
+	<!-- header -->
+	<header class="inner">
+		<!-- top line menu -->
+		<div class="header_top ">
+			<div class="header_top--toggler">
+				<a href="javascript:;" id="menuToggler"></a>
+			</div>
+			<div class="header_top--logo">
+			</div>
+
+			<div class="header_top--phone">
+				<span>Бесплатный звонок по России</span>
+				<a href="tel:8-800-1000-10-10">8-800-1000-10-10</a>
+			</div>
+
+			<div class="header_top--phone">
+				<span>Бесплатный звонок по России</span>
+				<a href="tel:8-800-1000-10-10">8-800-1000-10-10</a>
+			</div>
+
+			<div class="header_top--menu top_menu">
+				<div class="top_menu--links">
+					<div class="top_search">
+						<form action="#" class="form_search">
+							<input type="text" name="search" id="search" placeholder="Поиск по сайту">
+							<button></button>
+						</form>
+					</div>
+					<div class="top_favorite">
+						<span>Избранное</span>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Цены</a></li>
+						<li class="active"><a href="#">Акции</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Фото/Видео</a></li>
+						<li><a href="#">блог</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div><!-- /. top line menu -->
+
+		<!-- nav -->
+		<nav class="top_nav">
+			<span class="mobile_front">Категории</span>
+			<ul>
+				<li><a href="#">Дома из бревна</a></li>
+				<li><a href="#">Бани из бревна</a></li>
+				<li><a href="#">Срубы </a></li>
+				<li><a href="#">Дома</a></li>
+				<li class="dropdown">
+					<a href="#">Проекты</a>
+					<ul class="parent">
+						<li><a href="#">Фундамент</a></li>
+						<li><a href="#">Стены</a></li>
+						<li><a href="#">Кровля</a></li>
+						<li><a href="#">Крыльцо и навес</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Этапы стройки</a></li>
+				<li><a href="#">Материалы</a></li>
+				<li><a href="#">Технологии рубки</a></li>
+			</ul>
+		</nav>
+		<!-- /. nav -->
+	</header><!-- /. header -->
+
+	<!-- section-actions -->
+	<section class="actions">
+		<div class="wrap">
+
+			<div class="crumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><span>Фотогалерея</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="container">
+				
+				
+				<div class="row">
+					<div class="col-12">
+						<div class="title inner">Фотогалерея</div>
+					</div>
+				</div>
+				
+				
+				<div class="block-collapse2">
+					
+					<div id="accordion2">
+					  <h3>
+					  <div class="bc-title">Подбор по параметрам</div>
+					  <div class="bc-arrow1"></div>
+					  </h3>
+
+					  <div>
+						<div class="filter">
+							<form>
+								<div class="filter-row">
+									
+									<div class="filter-block">
+										<div class="filt-title">Подкатегории</div>
+										<select class="js-example-basic-single" name="vid1">
+											<option value="cat1">Дом</option>
+											<option value="cat2">Баня</option>
+											<option value="cat3">Дом-баня</option>
+											<option value="cat4">Дача</option>
+											<option value="cat5">Гостевой дом</option>
+											<option value="cat5">Беседка</option>
+											<option value="cat5">Прочее</option>
+										</select>
+									</div>
+
+									<div class="filter-block">
+										<div class="filt-title">Площадь</div>
+										<select class="js-example-basic-multiple" name="plo1[]" multiple="multiple">
+										  <option value="p1">25-70м</option>
+										  <option value="p2">71-100м</option>
+										  <option value="p3">101-150м</option>
+										  <option value="p4">151-200м</option>
+										  <option value="p5">от 200м-+</option>
+										</select>
+									</div>
+
+									<div class="filter-block">
+										<div class="filt-title">Размер</div>
+										<select class="js-example-basic-multiple" name="plo2[]" multiple="multiple">
+										  <option>5*5м</option>
+										  <option>10*10м</option>
+										  <option>20*20м</option>
+										 </select>
+									</div>
+
+									<div class="filter-block">
+										<div class="filt-title">Этажность</div>
+										<select class="js-example-basic-multiple" name="plo3[]" multiple="multiple">
+										  <option>1 этаж</option>
+										  <option>2 этажа</option>
+										  <option>3 этажа</option>
+										 </select>
+									</div>
+
+									<div class="filter-block">
+										<div class="filt-title">Виды</div>
+										<select class="js-example-basic-single" name="vid2">
+										  <option>С гаражом</option>
+										  <option>Без гаража</option>
+										</select>
+									</div>
+
+								</div>
+
+								<div class="filter-row">
+									
+									<div class="filter-left">
+										<div class="filter-block">
+										<div class="filt-title">Тип рубки</div>
+										<select class="js-example-basic-single" name="vid3">
+										  <option>Канадская рубка</option>
+										  <option>Русская рубка</option>
+										</select>
+										</div>
+										<div class="filter-block">
+										<div class="filt-title">Материал</div>
+										<select class="js-example-basic-single" name="vid4">
+										  <option>Сосна</option>
+										  <option>Дуб</option>
+										</select>
+										</div>
+									</div>
+									<div class="filter-right">
+										<a href="">Сбросить фильтр</a>
+										<button class="btn_link">применить</button>
+
+									</div>
+
+								</div>
+
+							</form>
+						</div>
+					  </div>
+
+					 
+					  
+					</div>
+
+				</div>
+
+				<div class="vibor-line">
+					<a href="">баня <img src="img/close.png"></a>
+					<a href="">25-70м <img src="img/close.png"></a>
+					<a href="">70-90м <img src="img/close.png"></a>
+					<a href="">1 этаж <img src="img/close.png"></a>
+					<a href="">канадская рубка <img src="img/close.png"></a>
+					<a href="">сосна <img src="img/close.png"></a>
+				</div>
+
+				<div class="gal-topline">
+					<div class="gal-result">Найдено 6 результатов</div>
+					<div class="how-match">
+					<div class="match1">количество на странице</div>
+					<ul>
+						<li>6</li>
+						<li><a href="#">24</a></li>
+						<li><a href="#">Все</a></li>
+					</ul>
+				</div>
+				</div>
+
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom1.png">
+						<div class="gal-block"><img src="img/g1.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Деревянный дом 1233,2 м2</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/detali.png" alt="">
+								<span>Детали</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/otzyv.png" alt="">
+								<span>Отзывы</span>
+							</a>
+
+						</div>
+
+						<div class="gal-desk">
+							Объект в работе! Фото и видео закладки нового грандиозного проекта, весь ход строительства в режиме онлайн. Солидный дом из бревна, диаметр 400-550 мм в тонком конце. Площадь 1233 м2!
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom2.png">
+						<div class="gal-block"><img src="img/g1.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Деревянный дом 952 м2, канадская рубка</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/detali.png" alt="">
+								<span>Детали</span>
+							</a>
+
+						</div>
+
+						<div class="gal-desk">
+							Амбициозный проект дома из бревна диаметрами 400-550 мм в тонком конце выполнен! Длина бревна до 13 м. Разработана сложная система усадки: технология Post&Beam совмещена с канадской рубкой. Размер сруба по осям: 42,8м х 25,25м, высота 11.5 м.
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom3.png">
+						<div class="gal-block"><img src="img/g1.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Дом под ключ "Зарянка" 105  м2, с круглым окном, канадская рубка</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/detali.png" alt="">
+								<span>Детали</span>
+							</a>
+
+						</div>
+
+						<div class="gal-desk">
+							Амбициозный проект дома из бревна диаметрами 400-550 мм в тонком конце выполнен! Длина бревна до 13 м. Разработана сложная система усадки: технология Post&Beam совмещена с канадской рубкой. Размер сруба по осям: 42,8м х 25,25м, высота 11.5 м.
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom4.png">
+						<div class="gal-block"><img src="img/g2.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Дом 212 м2, канадская рубка</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/detali.png" alt="">
+								<span>Детали</span>
+							</a>
+
+						</div>
+
+						<div class="gal-desk">
+							Амбициозный проект дома из бревна диаметрами 400-550 мм в тонком конце выполнен! Длина бревна до 13 м. Разработана сложная система усадки: технология Post&Beam совмещена с канадской рубкой. Размер сруба по осям: 42,8м х 25,25м, высота 11.5 м.
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom5.png">
+						<div class="gal-block"><img src="img/g2.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Баня 40 м2, канадская рубка</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							
+
+						</div>
+
+						<div class="gal-desk">
+							Амбициозный проект дома из бревна диаметрами 400-550 мм в тонком конце выполнен! Длина бревна до 13 м. Разработана сложная система усадки: технология Post&Beam совмещена с канадской рубкой. Размер сруба по осям: 42,8м х 25,25м, высота 11.5 м.
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>			
+
+				<div class="gallery-row">
+					<div class="gal-row-left">
+						<img class="gal-main" src="img/dom6.png">
+						<div class="gal-block"><img src="img/g3.png"></div>
+					</div>
+					<div class="gal-row-right">
+						<div class="gal-title"><a href="#">Баня 42,8 м2, канадская рубка</a></div>
+
+						<div class="object_fastLink">
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/srub.png" alt="">
+								<span>Сруб</span>
+							</a>
+
+							<a href="#" class="object_fastLink--item">
+								<img src="img/video.png" alt="">
+								<span>Видео</span>
+							</a>
+
+							
+
+						</div>
+
+						<div class="gal-desk">
+							Амбициозный проект дома из бревна диаметрами 400-550 мм в тонком конце выполнен! Длина бревна до 13 м. Разработана сложная система усадки: технология Post&Beam совмещена с канадской рубкой. Размер сруба по осям: 42,8м х 25,25м, высота 11.5 м.
+						</div>
+
+						<div class="desk-line"></div>
+
+						<div class="desk-title">Характеристики объекта</div>
+
+						<div class="desk-bottom">
+							<div class="desk-left">
+								<div class="object_charact--row">
+									<span>Общая площадь</span>
+									<span>1233,2</span>
+								</div>
+								<div class="object_charact--row">
+									<span>м2Тип рубки</span>
+									<span>канадская</span>
+								</div>
+								<div class="object_charact--row">
+									<span>Материал</span>
+									<span>сосна</span>
+								</div>
+								
+							</div>
+							<div class="desk-right">
+								<div class="object_charact--row">
+									<span>Диаметр бревна</span>
+									<span>400-550 мм</span>
+								</div>
+								
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+				<div class="block-pagination">
+					<ul>
+						<li class="l-r-butt"><a href="#"><img class="l-b" src="img/prev-b.png">Назад</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">5</a></li>
+						<li class="pag-active">6</li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">24</a></li>
+						<li class="l-r-butt"><a href="#">Вперед<img class="r-b" src="img/next-b.png"></a></li>
+					</ul>
+				</div>	
+
+			
+			</div>
+		</div>
+	</section>
+	<!-- end section-actions -->	
+
+	<!-- main contact -->
+	<section class="m_contact">
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title">Любой сруб повторим для вас!</div>
+						<div class="m_contact--content">
+							<small>Позвоните прямо сейчас по телефону</small>
+							<a href="tel:+7(343)383-51-14">+7(343)383-51-14</a>
+
+							<small>или</small>
+							Закажите экскурсию на производство
+							<form action="" class="m_contact_form classic">
+								<input type="text" name="data" placeholder="e-mail/телефон">
+								<button class="btn_link">получить предложение</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /. main contact -->
+
+
+	<!-- footer -->
+	<footer>
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 col-md-3">
+						<div class="footer_menu">
+							<div class="footer_menu--title">Каталог услуг и проектов</div>
+							<ul>
+								<li><a href="#">архитектурное бюро</a></li>
+								<li><a href="#">Готовые проекты</a></li>
+								<li><a href="#">Дом «под ключ»</a></li>
+								<li><a href="#">Срубы</a></li>
+								<li><a href="#">отделка</a></li>
+								<li><a href="#">Магазин</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="footer_menu footer_menu2">
+							<div class="footer_menu--title">Информация</div>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Фото/видео</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="footer_info">
+							<div class="footer_info--part">
+								<h3>Реквизиты ООО "Древ Мастер"</h3>
+								<p>620141, г. Екатеринбург, <br>
+								ул. Завокзальная, 5</p>
+								<p>ИНН 6678055872  /  КПП 667801001</p>
+								<p>ОГРН 1156678002711</p>
+							</div>
+							<div class="footer_info--part">
+								<h3>Банковские реквизиты:</h3>
+								<p>р/счет №40702810424040000330 </p>
+								<p>в Филиал ПАО "БАНК УРАЛСИБ" в <br>
+								г. Екатеринбург,</p>
+								<p>БИК 046577446</p>
+								<p>к/счет №  30101810165770000446</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="copyright">
+							<p>Copyright © 2006-2019 ООО «Древ Мастер». все права защищены. Любое копирование материалов сайта считается незаконным.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/scripts.min.js"></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.0.11/dist/js/select2.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+    		$('.filter-block .js-example-basic-single').select2();
+    		$('.filter-block .js-example-basic-multiple').select2();
+		});
+
+		
+	</script>
+
+
+	
+</body>
+
+</html>

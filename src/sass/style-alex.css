@@ -859,7 +859,7 @@ img.gal-main {
     padding-top: 24px;
     padding-bottom: 22px;
     cursor: pointer 
-}
+} 
 .accordion_item--contact .accordion_item--title .bc-title{
     color: #020202;
     font-family: Cambria;
@@ -905,7 +905,7 @@ img.gal-main {
     bottom: 7px;
     opacity: .5;
 }
-.accordion_item--contact2 h3 {
+#accordion2 h3 {
     display: flex;
     cursor: pointer;
     position: relative;
@@ -922,7 +922,7 @@ img.gal-main {
     outline: none;
     flex-wrap: wrap;
 }
-.accordion_item--contact2 {
+#accordion2 {
     background-color: #dbdbdb;
     padding-left: 34px;
     padding-right: 34px;
@@ -930,7 +930,7 @@ img.gal-main {
     padding-bottom: 28px;
     border-radius: 5px;
 }
-.accordion_item--contact2 h3:after {
+#accordion2 h3:after {
     content: "";
     display: block;
     height: 1px;

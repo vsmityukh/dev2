@@ -5,6 +5,21 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    .search_row .how-match
+        justify-content: flex-start
+
+    .big_item.big_item--blog
+        max-width: 100%
+    .big_item.big_item--blog .big_item--img, .big_item.big_item--blog .big_item--desc
+        width: 100%
+    .big_item.big_item--blog .big_item--desc
+        padding-bottom: 65px
+
+    .big_item.big_item--blog .big_item--img img
+        width: 100%
+        height: 373px
+
+
     .big_item
         height: auto
         .big_item--desc
@@ -145,6 +160,10 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    .search_row 
+        margin-bottom: 14px
+        .search_input
+            margin-bottom: 56px
     .buro_steps--item span
         height: 48px
     .big_item
@@ -250,6 +269,30 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+    .big_item.big_item--blog .big_item--desc>p
+        display: none
+
+    .big_item.big_item--blog .big_item--desc>a
+        line-height: 1
+    .big_item.big_item--blog .big_item--img img
+        height: 153px
+
+    .big_item .big_item--desc .hash_wrapper
+        margin-top: 9px
+        margin-bottom: 21px
+
+    .big_item.big_item--blog .big_item--desc
+        padding-left: 13px
+        padding-right: 13px
+        padding-bottom: 96px
+
+    .autor
+        display: block
+        .autor_icons
+            margin-top: 15px
+        &>div
+            width: 100%
+
     .filter_box form .filter_form
         justify-content: space-between
     .filter_box .filter_row
@@ -427,6 +470,17 @@
         
 // ≥576px
 +media-breakpoint-down(xs)
+    .big_item.big_item--blog .big_item--desc 
+        padding-bottom: 15px
+        .autor
+            width: 100%
+            position: static
+    .big_item .big_item--desc 
+        .autor_icons--item:last-child
+            display: none
+    .autor .autor_icons
+        justify-content: flex-start
+
     section.pnf h2
         font-size: 58px
     section.pnf small
