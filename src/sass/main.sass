@@ -2840,9 +2840,151 @@ article
 		letter-spacing: 0.14px
 
 
+.fancybox-slide--html .fancybox-close-small
+	width: 24px
+	height: 24px
+	background: url('../img/modal-close.png') no-repeat
+	top: 22px
+	right: 23px	
+	svg
+		display: none
+.modal
+	display: none
+	max-width: 385px
+	border-radius: 10px
+	background-color: #f2f3f4
+	padding: 54px 58px 50px
+
+	
+
+	h3
+		color: #000000
+		font-family: Cambria
+		font-size: 24px
+		font-weight: 400
+		line-height: 24px
+		letter-spacing: 0.24px
+		text-align: center
+		margin-bottom: 30px
+		margin-top: 0
+	small
+		color: #808080
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 400
+		line-height: 24.29px
+		letter-spacing: 0.14px
+		display: block
+		text-align: center
+
+	.form_row
+		margin-bottom: 24px
+		&:last-child
+			margin-bottom: 0
+		&.error
+			input
+				border-color: #ff000050
+		&>div
+			width: 46%
+			display: inline-block
+			& + div
+				margin-left: 6%
+		.btn_link
+			display: block
+			padding: 12px 35px
+			margin-left: auto
+			margin-right: auto
+		label
+			display: block
+			margin-bottom: 6px
+			font-weight: 700
+			span
+				color: #ff0000
+		input
+			height: 36px
+			border-radius: 3px
+			border: 1px solid #58565420
+			background: transparent
+			width: 100%
+			padding: 0 12px
+			color: #000000
+			font-family: Roboto
+			font-size: 14px
+			letter-spacing: 0.14px
+			&::placeholder
+				color: #00000050
+				font-family: Roboto
+				font-size: 14px
+				letter-spacing: 0.14px
 
 
 
+		.info
+			color: #808080;
+			font-family: Roboto;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			letter-spacing: 0.12px
+			display: block
+			margin-top: 10px
+			position: relative
+		.error-message
+			padding-left: 10px
+			color: #808080;
+			font-family: Roboto;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			letter-spacing: 0.12px;
+			position: relative
+			display: flex
+			margin-top: 9px
+			&::before
+				content: "*"
+				color: #ff0000;
+				letter-spacing: 0.14px;
+				position: absolute
+				left: 0
+				top: 3px
+				
+	.form_row--input
+		input
+			display: none
+		label
+			padding-top: 3px
+			padding-left: 32px
+			position: relative
+			color: #808080
+			font-family: Roboto
+			font-size: 14px
+			font-weight: 400
+			line-height: 16px
+			letter-spacing: 0.14px
+			cursor: pointer
+			a
+				color: #3880b8
+				letter-spacing: 0.14px
+				text-decoration: underline
+			&::before
+				content: ""
+				width: 20px
+				height: 20px
+				border-radius: 3px
+				border: 1px solid #58565420
+				background: transparent
+				position: absolute
+				top: 2px
+				left: 0
+
+		input:checked + label::after
+			content: ""
+			background: url(../img/icon-filter_checked.png) no-repeat
+			width: 8px
+			height: 8px
+			position: absolute
+			left: 6px
+			top: 8px
 
 @import "style-alex.css"
 
