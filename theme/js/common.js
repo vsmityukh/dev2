@@ -108,6 +108,40 @@ $(function() {
 		]
 	  });
 
+	$('.cert_slider').slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					arrows: true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					arrows: true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 564,
+				settings: {
+					slidesToShow: 1,
+					arrows: true,
+					dots: false
+				}
+			}
+		]
+	})
+	
+
 	$(document).scroll(function(){
 		var offset = $(document).scrollTop(),
 			header = $('.main_slider').height();

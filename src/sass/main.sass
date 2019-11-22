@@ -194,6 +194,9 @@ h1
 	font-size: 30px	
 	margin-top: 15px
 	margin-bottom: 35px
+	&.subtitle_border
+		border-bottom: 1px solid #8e9aad20
+		padding-bottom: 12px
 	a.tab_link
 		color: #3880b8
 		&:hover
@@ -210,6 +213,18 @@ h1
 		&:hover
 			text-decoration: none
 			border-bottom: 0
+	a.subtitle_moreLink
+		float: right;
+		height: 36px;
+		border-radius: 5px;
+		background-color: #3880b8;
+		text-align: center
+		padding: 0 15px
+		line-height: 36px
+		color: #ffffff
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: 0.14px
 
 article
 	color: #808080
@@ -2613,6 +2628,220 @@ article
 		.autor_favorite
 			img
 				display: block
+
+
+//REVIEWS PAGE
+.toAddReviews
+	text-align: center
+	max-width: 818px
+	margin-left: auto
+	margin-right: auto
+	h3
+		color: #020202
+		font-family: Cambria
+		font-size: 24px
+		font-weight: 400
+		line-height: 1
+		margin-top: 0
+		margin-bottom: 21px
+
+.flamp_item
+	display: block
+	padding-bottom: 26px
+	padding-top: 13px
+	border-bottom: 1px solid #8e9aad20
+	.flamp_item--info
+		display: flex
+		width: 100%
+		padding-right: 26px
+		img
+			display: block
+		.flamp_top
+			padding-top: 10px
+			display: flex
+			justify-content: space-between
+	.flamp_item--content
+		display: flex
+		width: 100%
+		margin-top: 10px
+
+
+	.flamp_left
+		display: flex
+		justify-content: flex-end
+		width: 193px
+		padding-right: 26px
+		text-align: right
+	.flamp_name
+		color: #2f353f
+		font-family: Formular
+		font-size: 15px
+		font-weight: 500
+		line-height: 18px
+		letter-spacing: 0.15px
+		span
+			display: block
+			font-size: 11px
+			letter-spacing: 0.11px
+	.flamp_date
+		color: #8e9aad
+		letter-spacing: 0.12px
+		font-weight: 500
+		font-family: Formular
+
+
+	.flamp_right
+		width: calc(100% - 193px)
+
+	.stars
+		padding-top: 10px
+		display: flex
+		justify-content: flex-end
+		list-style: none
+		padding-left: 0
+		counter-reset: li
+		li
+			margin: 0 .5px
+			width: 31px
+			height: 31px
+			background-color: #1cbf60
+			border-radius: 50%
+			line-height: 31px
+			text-align: center
+			font-size: 12px
+			font-weight: 400
+			letter-spacing: 0.12px
+			color: #fff
+			&::after
+				counter-increment: li
+				content: counter(li)
+				display: inline-block
+
+	.flamp_text
+		color: #2f353f
+		font-family: Formular
+		font-size: 15px
+		font-weight: 400
+		line-height: 20px
+		letter-spacing: 0.15px
+		margin-top: 22px
+
+	.flamp_more
+		color: #8e9aad
+		font-family: Formular
+		font-size: 15px
+		font-weight: 500
+		line-height: 18px
+		letter-spacing: 0.15px
+		display: block
+		margin-top: 20px
+
+	.flamp_icons
+		display: flex
+		.flamp_icons--item
+			margin-right: 59px
+			margin-top: 27px
+			display: flex
+			align-items: center
+			span
+				color: #8e9aad
+				font-family: "Formular"
+				font-size: 12px
+				font-weight: 700
+				line-height: 18px
+				letter-spacing: 0.12px
+				margin-left: 8px
+
+
+
+.instagram_reviews
+	margin-top: 54px
+	margin-bottom: 52px
+	padding-bottom: 46px
+	border-bottom: 1px solid #8e9aad20
+
+.cert_wrap
+	max-width: 1000px
+	margin: 0 auto 52px 
+	.cert_slider
+		margin: 0 -12px
+		.cert_item
+			margin: 0 12px
+			&:focus
+				outline: none
+			img
+				max-width: 100%
+				display: block
+				margin: auto
+
+.video_review--item
+	margin-bottom: 52px
+	a
+		display: block
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 51px
+			height: 59px
+			display: inline-block
+			background: url('../img/play-bg.png') no-repeat
+			opacity: 1
+			transition: all .3s
+		&:hover::after
+			opacity: .5
+		img
+			max-width: 100%
+.another_rev
+	background-color: #fdfeff;
+	padding: 75px 39px 97px
+	text-align: center
+	color: #020202
+	font-family: Cambria
+	font-size: 18px
+	font-weight: 400
+	line-height: 24px
+	margin-bottom: 52px
+	
+	img
+		width: 97
+		height: 97px
+		border-radius: 50%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 44px
+	h3
+		font-size: 24px
+		font-weight: 400
+		margin-bottom: 0
+		margin-top: 0
+	small
+		font-size: 18px
+	p
+		margin-top: 19px
+		color: #808080
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		letter-spacing: 0.16px
+		margin-bottom: 21px
+		height: 165px
+		overflow: hidden
+	a
+		color: #3880b8
+		font-family: Roboto
+		font-size: 14px
+		line-height: 36px
+		letter-spacing: 0.14px
+
+
+
+
 
 
 @import "style-alex.css"

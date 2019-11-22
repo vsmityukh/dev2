@@ -269,6 +269,30 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+    .video_review--item a img
+        display: block
+        margin: auto
+    .flamp_item 
+        .flamp_left
+            justify-content: flex-start
+        .flamp_item--info
+            .flamp_top
+                flex-direction: column
+            .flamp_left
+                width: 56px
+                margin-right: 26px
+            .flamp_right
+                width: calc(100% - 82px)
+        .flamp_item--content
+            display: block 
+            .flamp_left
+                width: 100%
+            .flamp_right
+                width: 100%    
+
+    .subtitle_moreLink
+        display: none
+
     .big_item.big_item--blog .big_item--desc>p
         display: none
 
