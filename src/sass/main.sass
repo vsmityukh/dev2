@@ -430,6 +430,7 @@ article
 			padding-left: 43px
 			background: url('../img/icon-user.svg') no-repeat 13px 2px
 			input
+				box-sizing: border-box
 				height: 36px
 				border-radius: 4px
 				border: 1px solid #e5e5e5
@@ -1771,7 +1772,7 @@ footer
 			text-transform: uppercase
 			letter-spacing: 0.14px
 			font-size: 16px
-			padding: 1.125em 1.375em
+			padding: 1em 1.375em
 			line-height: 1
 			display: block
 			background: #e5e5e5
@@ -2407,7 +2408,7 @@ article
 			height: 9px
 			display: inline-block
 			background-size: contain
-	.accordion_item--content
+	.accordion_item--content 
 		display: none
 	.accordion_content--item
 		font-weight: 400
@@ -2419,7 +2420,7 @@ article
 		display: flex
 		justify-content: space-between
 		span:first-child
-			width: 80%
+			width: 65%
 			p
 				color: #808080
 				font-family: "Roboto"
@@ -2427,7 +2428,7 @@ article
 				font-weight: 400
 				letter-spacing: 0.14px
 				line-height: 24px
-		span:last-child
+		span:nth-child(2)
 			text-align: right
 		&.parent
 			display: block
@@ -2986,9 +2987,323 @@ article
 			left: 6px
 			top: 8px
 
+.right_links
+	position: fixed
+	top: 380px
+	width: 172px
+	right: 50px
+	.object_fastLink--item
+		width: 172px
+		display: flex
+		align-items: center
+		margin-bottom: 18px
+		img
+			width: 39px
+		span
+			width: calc(100% - 39px)
+			padding-left: 9px
+			color: #79797990
+			font-family: Roboto
+			font-size: 12px
+			font-weight: 400
+			line-height: 16px
+			letter-spacing: 0.13px
+
+.project_small--photo
+	max-width: 562px
+	margin-left: auto
+	margin-right: auto
+	margin-top: 22px
+	.more_photo--item
+		marign: 0 12px
+		img
+			max-width: 100%
+
+.project_info
+	.project_info--liks
+		display: flex
+		margin-top: 38px
+		flex-wrap: wrap
+		.object_fastLink--item
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+			color: #79797990
+			font-family: Roboto
+			font-size: 12px
+			line-height: 16px
+			letter-spacing: 0.13px
+			width: 50%
+			&:hover
+				text-decoration: none
+			img
+				margin-right: 6px
+				width: 39px
+
+	.project_info--base
+		color: #000000
+		font-family: Roboto
+		font-weight: 700
+		font-size: 18px
+		.price
+			font-size: 24px
+			font-weight: 700
+		span
+			display: block
+			color: #808080
+			font-family: "Roboto"
+			font-size: 14px
+			letter-spacing: 0.14px
+			line-height: 24px
+		a
+			color: #3880b8
+			text-decoration: underline
+
+	.project_info--more
+		margin: 17px 0 30px
+		p
+			color: #000000
+			font-family: Roboto
+			font-size: 15px
+			font-weight: 400
+			span
+				font-weight: 700
+				display: block
+
+	.btn_link
+		font-family: Roboto
+		font-size: 18px
+		font-weight: 500
+		letter-spacing: 0.18px
+		padding: 16px 0
+		text-transform: none
+	.to-compare
+		margin-top: 12px
+		width: 231px
+		display: flex
+		align-items: center
+		justify-content: center
+		font-family: Roboto
+		height: 36px
+		line-height: 36px
+
+		text-align: center
+		border-radius: 5px
+		background-color: #5a5856
+		color: #fae300
+		letter-spacing: 0.16px
+		&:hover
+			background-color: #383838
+			text-decoration: none
+		img
+			margin-left: 13px
+			vertical-align: middle
+	.project_detalis
+		display: flex
+		margin-top: 50px
+		color: #000000;
+		letter-spacing: 0.14px;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 16px;
+		.detalis_stars
+			padding-top: 4px
+			padding-right: 9px
+			width: 21px
+		div
+			width: calc(100% - 21px)
+			padding-left: 0px
+			display: flex
+			span
+				padding-top: 4px
+			img
+				margin-right: 12px
+			
+.project_fastLink
+	margin-bottom: 34px
+	a
+		color: #000000
+		font-family: "Roboto"
+		font-size: 16px
+		font-weight: 500
+		border-bottom: 1px solid #80808020
+		&:hover
+			border-bottom: 0
+			text-decoration: none
+		& + a::before
+			content: "/"
+			margin-right: 2px
+		&.active
+			color: #808080
+			border-bottom: 0
+
+//PROJECTS TABS CONTENT
+
+.projects_description
+	.accordion_box
+		margin-top: 0
+		margin-bottom: 0
+		.accordion_item + .accordion_item
+			// margin-top: 45px 
+		.accordion_content--item:last-child
+			margin-bottom: 20px
+	.text
+		p
+			color: #808080
+			font-family: Roboto
+			font-size: 14px
+			line-height: 24px
+			letter-spacing: 0.14px
+	.layout_item
+		color: #808080
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+		display: flex
+		justify-content: space-between
+		& + .layout_item
+			margin-top: 36px	
+		.layout_item--part
+			width: 48%
+		.layout_item--title
+			color: #000
+			font-weight: 700
+			margin-bottom: 11px
+		.layout_item-content
+			+ .layout_item--title
+				margin-top: 35px
+		a.pdf
+			padding-left: 0
+			color: #3880b8
+			text-decoration: underline
+			display: flex
+			align-items: center
+			&:hover
+				text-decoration: none
+			&::before
+				content: ""
+				background: url('../img/pdf-icon.png') no-repeat
+				width: 49px
+				height: 49px
+				display: inline-block
+				margin-right: 10px
+
+	.character_list
+		list-style: none
+		padding-left: 0
+		margin-bottom: 0
+		li
+			display: inline-block
+			padding-left: 25px
+			position: relative
+			color: #808080
+			font-family: Roboto
+			font-size: 14px
+			line-height: 24px
+			& + li
+				margin-left: 50px
+			&::before
+				content: ""
+				width: 12px
+				height: 12px
+				position: absolute
+				top: 6px
+				left: 0
+				background-color: #fae300
+			span
+				color: #000
+				font-size: 18px
+				font-weight: 700
+				letter-spacing: 0.18px
+				text-transform: uppercase
+				display: block
+.proj_wrap
+	margin: 52px 0 0
+
+	details
+		summary
+			color: #ffffff
+			font-family: Cambria
+			font-size: 18px
+			font-weight: 400
+			text-transform: uppercase
+			border-radius: 4px;
+			background-color: #5a5856;
+			padding: 17px 60px
+			margin-bottom: 36px
+			display: inline-block
+			line-height: 1
+			&:hover
+				text-decoration: none
+
+.quest_added
+	color: #ffffff
+	font-family: Cambria
+	font-size: 18px
+	font-weight: 400
+	text-transform: uppercase
+	border-radius: 4px;
+	background-color: #5a5856;
+	padding: 17px 60px
+	margin-bottom: 36px
+	display: inline-block
+	line-height: 1
+	& + .comment_box
+		display: none
+	&:hover
+		text-decoration: none
+
+.this_object--wrap
+	.this_object
+		display: flex
+		.this_object--img
+			width: 194px
+			padding-right: 23px
+		.this_object--desc
+			width: calc(100% - 194px)
+			h3
+				color: #000000
+				font-family: Cambria
+				font-size: 24px
+				margin-bottom: 18px
+				line-height: 1
+				font-weight: 400
+			p
+				color: #808080;
+				font-family: Roboto;
+				font-size: 14px;
+				line-height: 1.7
+				letter-spacing: 0.14px;
+		& + .this_object
+			margin-top: 18px
+
+
+.projects_slider--wrap
+	max-width: 950px
+	margin: 0 auto
+.projects_slider--topLinks
+	display: flex
+	justify-content: space-between
+	margin-bottom: 29px
+	a
+		color: #000000
+		font-family: Cambria
+		font-size: 30px
+.projects_slider
+	margin: 0 -12px
+	.projects_slider--item
+		max-width: 461px
+		margin: 0 12px
+		.small_card .slider_img
+			height: 300px
+
 @import "style-alex.css"
 
 @media (max-width: 1600px)
+	.right_links
+		display: none
 	header
 		nav.top_nav
 			margin-left: auto
@@ -3053,6 +3368,9 @@ article
 	
 	.header_top--toggler
 		display: block
+
+
+
 
 @media (max-width: 1440px)
 	.left_menu
