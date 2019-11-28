@@ -272,4 +272,50 @@ $(function() {
 			.find('.filter_box--body').slideToggle();
 	})
 
+
+
+	//filter select logic
+	$('.selectCat--header').click(function(){
+		if ( $(this).hasClass('active') ){
+			$(this).removeClass('active');
+			$(this).next().toggleClass('active');
+		}else{
+			var wrap = $(this).closest('.blockSelect-row');
+			wrap.find('.selectCat--header.active').removeClass('active');
+			wrap.find('.selectCat--in.active').removeClass('active');
+
+			$(this).addClass('active');
+			$(this).next().addClass('active');
+		}
+		
+	})
+
+	$('.blockRadio .selectCat--in input').change(function(){
+		var parent = $(this).closest('.blockRadio'),
+			checkedCategoryText = parent.find('input:checked').next().text();
+		parent.find('.selectCat--header').text(checkedCategoryText);
+	})
+
+	$('.blockSelect .selectCat--in input').change(function(){
+		var parent = $(this).closest('.blockSelect'),
+			parentHeader= parent.find('.selectCat--header'),
+		    countCheckedItem = parent.find('input:checked').length,
+			prevText = parentHeader.data('title'); //запоминаем хедер блока
+
+		var checkedCategoryList = parent.find('input:checked');
+		var checkedCategoryText= '';
+		$.each(checkedCategoryList, function(i, val) {
+			if (checkedCategoryText != '')
+				checkedCategoryText += ', ' + $(val).next().text()
+			else
+				checkedCategoryText += $(val).next().text()
+	  	})
+
+		if(countCheckedItem > 0)
+			parentHeader.find('span').text(checkedCategoryText);
+		else{
+			parentHeader.find('span').text(prevText);
+		}
+	})
+
 });

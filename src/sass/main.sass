@@ -3299,6 +3299,138 @@ article
 		.small_card .slider_img
 			height: 300px
 
+
+.block-collapse2 .filter
+	margin-bottom: -35px
+
+.blockSelect-row
+	display: flex
+	flex-wrap: wrap	
+	margin: 0 -12px
+.blockFilter
+	position: relative
+	margin: 0 12px 35px
+	&.blockRadio
+		width: 232px
+	&.blockSelect
+		width: 173px
+.selectCat--header
+	height: 36px
+	border-radius: 4px
+	border: 1px solid #c6c0b8
+	color: #808080;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14.4px
+	padding: 10px 30px 10px 13px
+	cursor: pointer
+	text-overflow: ellipsis
+	overflow: hidden
+	position: relative
+	background: #fff
+	&::after
+		content: ""
+		position: absolute
+		z-index: 10
+		right: 10px
+		top: 15px
+		background: url('../img/arrow-down.png') no-repeat
+		background-position: 95% 50%
+		background-size: 13px 7px
+		width: 13px
+		height: 7px
+	&.active::after
+		transform: rotate(180deg)
+
+	span
+		white-space: nowrap
+		text-overflow: ellipsis
+.selectCat--in
+	display: none
+	top: 36px
+	position: absolute
+	z-index: 100
+	background: #fff
+	padding: 0 12px
+	border: 1px solid #c5c5c5
+	border-top: 0
+	width: 100%
+	border-bottom-left-radius: 4px
+	border-bottom-right-radius: 4px
+	&.active
+		display: block
+	&>div
+		padding: 9px 0 9px
+		& + div
+			border-top: 1px solid #c5c5c550
+		input[type=radio]
+			display: none
+			&:checked + label
+				font-weight: 500
+				color: #000000
+		input[type=checkbox]
+			display: none
+			&:checked + label
+				font-weight: 500
+				color: #000000
+				&::after
+					content: "";
+					background: url(../img/icon-filter_checked.png) no-repeat;
+					width: 8px;
+					height: 8px;
+					position: absolute;
+					left: 4px;
+					top: 3.5px;
+			& + label
+				padding-left: 24px
+				&::before
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					width: 15px
+					height: 15px
+					display: inline-block
+					border: 1px solid #c5c5c5;
+					background-color: #ffffff;
+		label
+			width: 100%
+			line-height: 15px
+			color: #808080;
+			font-family: Roboto;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 14.4px;
+			cursor: pointer
+			position: relative
+			margin-bottom: 0
+.blockBtn
+	width: 40%
+	display: flex
+	justify-content: flex-end
+	margin-right: 0
+	margin-left: auto
+	align-items: center
+	margin-bottom: 35px
+	a
+		color: #010101
+		font-family: Roboto
+		font-size: 14px
+		line-height: 36px
+		text-decoration: underline
+		letter-spacing: 0.14px
+		margin-right: 15px
+		&:hover
+			text-decoration: none
+	button
+		width: 114px
+		height: 36px
+.vibor-line a
+	&:hover
+		color: inherit	
+			
+
 @import "style-alex.css"
 
 @media (max-width: 1600px)

@@ -191,100 +191,154 @@
 				<div class="block-collapse2">
 					
 					<div id="accordion2">
-					  <h3>
-					  <div class="bc-title">Подбор по параметрам</div>
-					  <div class="bc-arrow1"></div>
-					  </h3>
+						<h3>
+						<div class="bc-title">Подбор по параметрам</div>
+						<div class="bc-arrow1"></div>
+						</h3>
 
-					  <div>
 						<div class="filter">
 							<form>
-								<div class="filter-row">
-									
-									<div class="filter-block">
-										<div class="filt-title">Подкатегории</div>
-										<select class="js-example-basic-single" name="vid1">
-											<option value="cat1">Дом</option>
-											<option value="cat2">Баня</option>
-											<option value="cat3">Дом-баня</option>
-											<option value="cat4">Дача</option>
-											<option value="cat5">Гостевой дом</option>
-											<option value="cat5">Беседка</option>
-											<option value="cat5">Прочее</option>
-										</select>
-									</div>
+								<div class="blockSelect-row">
 
-									<div class="filter-block">
-										<div class="filt-title">Площадь</div>
-										<select class="js-example-basic-multiple" name="plo1[]" multiple="multiple">
-										  <option value="p1">25-70м</option>
-										  <option value="p2">71-100м</option>
-										  <option value="p3">101-150м</option>
-										  <option value="p4">151-200м</option>
-										  <option value="p5">от 200м-+</option>
-										</select>
-									</div>
-
-									<div class="filter-block">
-										<div class="filt-title">Размер</div>
-										<select class="js-example-basic-multiple" name="plo2[]" multiple="multiple">
-										  <option>5*5м</option>
-										  <option>10*10м</option>
-										  <option>20*20м</option>
-										 </select>
-									</div>
-
-									<div class="filter-block">
-										<div class="filt-title">Этажность</div>
-										<select class="js-example-basic-multiple" name="plo3[]" multiple="multiple">
-										  <option>1 этаж</option>
-										  <option>2 этажа</option>
-										  <option>3 этажа</option>
-										 </select>
-									</div>
-
-									<div class="filter-block">
-										<div class="filt-title">Виды</div>
-										<select class="js-example-basic-single" name="vid2">
-										  <option>С гаражом</option>
-										  <option>Без гаража</option>
-										</select>
-									</div>
-
-								</div>
-
-								<div class="filter-row">
-									
-									<div class="filter-left">
-										<div class="filter-block">
-										<div class="filt-title">Тип рубки</div>
-										<select class="js-example-basic-single" name="vid3">
-										  <option>Канадская рубка</option>
-										  <option>Русская рубка</option>
-										</select>
-										</div>
-										<div class="filter-block">
-										<div class="filt-title">Материал</div>
-										<select class="js-example-basic-single" name="vid4">
-										  <option>Сосна</option>
-										  <option>Дуб</option>
-										</select>
+									<div class="blockFilter blockRadio">
+										<div class="selectCat--header">Выберите категорию</div>
+										<div class="selectCat--in">
+											<div>
+												<input type="radio" name="category" id="category1">
+												<label for="category1">Дом</label>
+											</div>
+											<div>
+												<input type="radio" name="category" id="category2">
+												<label for="category2">Баня</label>
+											</div>
+											<div>
+												<input type="radio" name="category" id="category3">
+												<label for="category3">Дом-баня </label>
+											</div>
+											<div>
+												<input type="radio" name="category" id="category4">
+												<label for="category4">Дача</label>
+											</div>
+											<div>
+												<input type="radio" name="category" id="category5">
+												<label for="category5">Гостевой дом</label>
+											</div>
 										</div>
 									</div>
-									<div class="filter-right">
-										<a href="">Сбросить фильтр</a>
-										<button class="btn_link">применить</button>
+									
+									<div class="blockFilter blockSelect">
+										<div class="selectCat--header" data-title="Площадь">
+											<span>Площадь</span>
+										</div>
+										<div class="selectCat--in">
+											<div><input type="checkbox" id="bio"><label for="bio">25-70м2</label></div>
+											<div><input type="checkbox" id="kolskop"><label for="kolskop">71-100м2</label></div>
+											<div><input type="checkbox" id="kreslo-gin"><label for="kreslo-gin">101-150м2 </label></div>
+											<div><input type="checkbox" id="workPlace"><label for="workPlace">151-200м2 </label></div>
+											<div><input type="checkbox" id="uzi"><label for="uzi">от 200м2</label></div>
+										</div>
+									</div>
 
+									<div class="blockFilter blockSelect">
+										<div class="selectCat--header" data-title="Размер">
+											<span>Размер</span>
+										</div>
+										<div class="selectCat--in">
+											<div>
+												<input type="checkbox" id="bio1">
+												<label for="bio1">25-70м2</label>
+											</div>
+											<div>
+												<input type="checkbox" id="kolskop1">
+												<label for="kolskop1">71-100м2</label>
+											</div>
+											<div>
+												<input type="checkbox" id="kreslo-gin1">
+												<label for="kreslo-gin1">101-150м2 </label>
+											</div>
+											<div>
+												<input type="checkbox" id="workPlace1">
+												<label for="workPlace1">151-200м2 </label>
+											</div>
+											<div>
+												<input type="checkbox" id="uzi1">
+												<label for="uzi1">от 200м2</label>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="blockFilter blockSelect">
+										<div class="selectCat--header" data-title="Этажность">
+											<span>Этажность</span>
+										</div>
+										<div class="selectCat--in">
+											<div>
+												<input type="checkbox" id="etzh1">
+												<label for="etzh1">1 этаж</label>
+											</div>
+											<div>
+												<input type="checkbox" id="etzh2">
+												<label for="etzh2">2 этаж</label>
+											</div>
+											<div>
+												<input type="checkbox" id="etzh3">
+												<label for="etzh3">3 этаж</label>
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="blockFilter blockRadio">
+										<div class="selectCat--header">Виды</div>
+										<div class="selectCat--in">
+											<div>
+												<input type="radio" name="vid" id="vid1">
+												<label for="vid1">Дом</label>
+											</div>
+											<div>
+												<input type="radio" name="vid" id="vid2">
+												<label for="vid2">Баня</label>
+											</div>
+											<div>
+												<input type="radio" name="vid" id="vid3">
+												<label for="vid3">Дом-баня </label>
+											</div>
+											<div>
+												<input type="radio" name="vid" id="vid4">
+												<label for="vid4">Дача</label>
+											</div>
+											<div>
+												<input type="radio" name="vid" id="vid5">
+												<label for="vid5">Гостевой дом</label>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="blockFilter blockSelect">
+										<div class="selectCat--header" data-title="Площадь">
+											<span>Площадь</span>
+										</div>
+										<div class="selectCat--in">
+											<div><input type="checkbox" id="bio2"><label for="bio2">25-70м2</label></div>
+											<div><input type="checkbox" id="kolskop2"><label for="kolskop2">71-100м2</label></div>
+											<div><input type="checkbox" id="kreslo-gin2"><label for="kreslo-gin2">101-150м2 </label></div>
+											<div><input type="checkbox" id="workPlace2"><label for="workPlace2">151-200м2 </label></div>
+											<div><input type="checkbox" id="uzi2"><label for="uzi2">от 200м2</label></div>
+										</div>
+									</div>
+
+									<div class="blockBtn">
+										<a href="#">Сбросить фильтр</a>
+										<button class="btn_link">Применить</button>
 									</div>
 
 								</div>
 
 							</form>
 						</div>
-					  </div>
 
-					 
-					  
 					</div>
 
 				</div>

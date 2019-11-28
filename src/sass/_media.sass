@@ -160,6 +160,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    .blockBtn
+        justify-content: flex-start
+        margin-left: 12px
+        margin-right: auto
+        margin-bottom: 15px
+        width: 100%
+    .blockFilter
+        margin-bottom: 15px
+    .block-collapse2 .filter
+        margin-bottom: -15px
     .search_row 
         margin-bottom: 14px
         .search_input
@@ -494,6 +504,14 @@
         
 // ≥576px
 +media-breakpoint-down(xs)
+    .blockBtn
+        justify-content: space-between
+        button
+            margin: 0 12px 0 0
+    #accordion2
+        padding: 30px 22px
+    .blockFilter.blockRadio,.blockFilter.blockSelect
+        width: 100%
     .big_item.big_item--blog .big_item--desc 
         padding-bottom: 15px
         .autor
